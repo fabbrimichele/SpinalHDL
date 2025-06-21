@@ -8,3 +8,6 @@ A Blink project in SpinalHDL for the Papilio Duo dev board (Xilinx Spartan 6)
 ```
 make
 ```
+
+## References
+* [Papilio-DUO GitHub Repository](https://github.com/GadgetFactory/Papilio-DUO)

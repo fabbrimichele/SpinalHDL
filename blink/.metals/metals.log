@@ -790,3 +790,590 @@ WARNING: Unmatched cancel notification for request id 307
 2025.06.21 20:06:23 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
 2025.06.21 20:06:23 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
 2025.06.21 20:06:23 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 20:27:28 WARN  no build target for: /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala
+2025.06.21 20:27:28 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 20:27:28 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 20:27:28 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 20:27:28 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:09:23 WARN  no build target for: /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala
+2025.06.21 21:09:23 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:09:23 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:09:23 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:09:52 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:09:52 WARN  no build target for: /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala
+2025.06.21 21:09:52 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:09:52 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:10:04 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:10:07 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:10:07 WARN  no build target for: /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala
+2025.06.21 21:10:07 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:10:07 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:10:07 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:10:07 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:10:07 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:10:15 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:10:15 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:10:16 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:10:22 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:10:33 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:10:33 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:10:33 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:10:38 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:10:38 WARN  no build target for: /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala
+2025.06.21 21:10:38 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:10:38 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:10:38 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:10:41 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:10:41 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:10:41 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:10:41 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:10:41 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:10:41 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:10:42 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:10:42 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:10:42 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:10:42 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:10:43 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:10:43 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:10:44 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:10:43 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:10:43 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:10:44 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:10:44 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:10:48 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:10:48 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:10:48 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:10:48 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:10:49 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:10:49 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:10:50 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:10:50 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:10:50 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:10:50 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:10:51 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:10:51 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:10:51 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:10:51 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:10:51 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:10:51 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:10:51 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:10:52 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:10:52 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:10:52 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:10:52 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:10:53 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:10:53 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:10:54 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:10:54 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:10:54 WARN  no build target for: /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala
+2025.06.21 21:10:54 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:01 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:01 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:01 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:02 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:02 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:02 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:02 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:02 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:03 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:03 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:04 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:04 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:03 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:04 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:04 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:04 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:04 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:04 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:05 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:05 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:05 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:08 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:08 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:08 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:08 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:08 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:08 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:09 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:08 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:09 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:11 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:11 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:11 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:11 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:12 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:12 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:13 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:13 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:13 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:14 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:14 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:14 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:16 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:16 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:16 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:16 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:16 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:17 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:16 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:17 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:17 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:17 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:18 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:18 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:18 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:18 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:18 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:18 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:18 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:19 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:19 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:20 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:20 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:19 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:19 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:20 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:20 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:19 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:24 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:24 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:24 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:24 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:24 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:24 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:25 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:25 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:26 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:26 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:26 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:29 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:29 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:29 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:30 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:29 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:30 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:30 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:31 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:31 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:31 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:31 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:31 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:33 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:33 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:33 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:33 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:33 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:33 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:33 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:34 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:34 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:34 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:35 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:34 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:34 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:35 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:35 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:36 WARN  no build target for: /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala
+2025.06.21 21:11:36 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:37 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:37 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:37 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:39 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:42 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:42 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:42 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:42 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:42 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:42 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:43 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:43 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:43 WARN  no build target for: /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala
+2025.06.21 21:11:43 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:44 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:44 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:44 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:44 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:46 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:46 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:46 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:47 WARN  no build target for: /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala
+2025.06.21 21:11:47 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:48 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:48 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:48 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:48 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:49 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:50 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:50 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:49 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:49 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:51 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:50 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:11:51 WARN  no build target for: /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala
+2025.06.21 21:11:51 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:00 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:00 WARN  no build target for: /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala
+2025.06.21 21:13:00 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:00 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:00 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:00 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:01 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:01 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:01 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:01 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:01 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:01 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:01 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:01 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:02 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:02 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:02 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:02 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:02 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:03 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:03 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:04 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:04 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:03 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:04 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:04 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:04 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:04 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:04 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:04 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:04 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:05 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:04 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:05 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:05 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:06 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:05 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:06 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:08 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:08 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:08 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:08 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:08 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:09 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:09 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:09 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:09 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:09 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:09 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:09 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:10 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:10 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:10 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:10 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:10 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:11 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:11 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:10 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:15 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:15 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:15 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:15 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:15 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:16 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:16 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:16 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:16 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:18 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:18 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:18 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:18 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:18 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:18 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:18 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:18 WARN  no build target for: /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala
+2025.06.21 21:13:18 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:21 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:21 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:21 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:21 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:22 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:24 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:34 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:34 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:46 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:46 ERROR scala.meta.internal.metals.debug.DiscoveryFailures$BuildTargetNotFoundForPathException: No build target could be found for the path: /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala
+	at scala.meta.internal.metals.debug.DebugDiscovery.validate(DebugDiscovery.scala:94)
+	at scala.meta.internal.metals.debug.DebugDiscovery.debugDiscovery(DebugDiscovery.scala:170)
+	at scala.meta.internal.metals.debug.DebugDiscovery.runCommandDiscovery(DebugDiscovery.scala:61)
+	at scala.meta.internal.metals.MetalsLspService.discoverMainClasses(MetalsLspService.scala:1489)
+	at scala.meta.internal.metals.WorkspaceLspService.executeCommand(WorkspaceLspService.scala:916)
+	at scala.meta.metals.lsp.DelegatingScalaService.executeCommand(DelegatingScalaService.scala:169)
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:128)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:271)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:201)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2025.06.21 21:13:46 WARN  no build target for: /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala
+2025.06.21 21:13:46 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:13:46 ERROR scala.meta.internal.metals.debug.DiscoveryFailures$BuildTargetNotFoundForPathException: No build target could be found for the path: /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala
+	at scala.meta.internal.metals.debug.DebugDiscovery.validate(DebugDiscovery.scala:94)
+	at scala.meta.internal.metals.debug.DebugDiscovery.debugDiscovery(DebugDiscovery.scala:170)
+	at scala.meta.internal.metals.MetalsLspService.debugDiscovery(MetalsLspService.scala:1456)
+	at scala.meta.internal.metals.WorkspaceLspService.executeCommand(WorkspaceLspService.scala:1112)
+	at scala.meta.metals.lsp.DelegatingScalaService.executeCommand(DelegatingScalaService.scala:169)
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:128)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:271)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:201)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2025.06.21 21:13:58 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:14:09 WARN  no build target for: /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala
+2025.06.21 21:14:09 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:14:09 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:14:09 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:14:09 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:14:09 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:14:49 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:14:49 WARN  no build target for: /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelFormal.scala
+2025.06.21 21:14:49 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:14:49 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:14:49 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:14:50 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:14:59 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:14:59 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:14:59 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:14:59 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:04 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:04 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:04 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:04 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:04 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:07 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:07 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:12 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:13 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:14 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:14 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:15 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:15 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:15 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:15 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:16 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:16 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:16 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:16 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:16 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:17 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:17 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:17 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:18 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:18 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:19 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:19 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:18 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:18 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:18 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:18 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:18 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:20 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:20 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:20 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:20 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:20 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:20 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:21 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:21 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:21 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:21 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:23 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:23 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:24 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:23 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:24 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:24 WARN  no build target for: /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelFormal.scala
+2025.06.21 21:15:24 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:25 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:26 WARN  no build target for: /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala
+2025.06.21 21:15:26 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:26 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:26 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:26 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:26 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:27 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:32 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:32 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:32 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:32 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:34 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:34 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:35 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+Jun 21, 2025 9:15:35 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1470
+2025.06.21 21:15:35 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:35 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:35 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:35 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:35 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:35 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:35 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:35 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:35 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:36 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:36 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:36 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:36 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:36 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:36 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:36 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:37 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:37 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:38 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:38 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:38 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:38 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:38 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:38 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:39 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:39 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:39 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:39 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:39 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:39 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:40 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:40 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:40 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:40 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:40 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:40 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:40 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:40 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:40 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:41 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:41 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:41 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:41 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:41 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:41 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:42 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:41 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:42 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:43 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:43 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:43 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:43 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:43 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:43 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:44 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:43 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:44 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:44 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:44 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:44 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:44 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:44 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:45 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:45 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:45 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:46 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:45 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:55 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:55 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:56 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:56 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:15:58 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:16:11 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:16:11 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:16:11 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:16:19 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:16:19 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:16:20 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:16:20 WARN  no build target for: /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala
+2025.06.21 21:16:20 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:16:20 INFO  empty definition using pc, found symbol in pc: `<none>`. (full report at: "/home/michele/spinalHDL/blink/.metals/.reports/metals-full/2025-06-21/r_empty-definition_19-15-56-653.md")
+2025.06.21 21:25:04 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:45:13 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:45:14 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:49:39 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:50:59 WARN  no build target for: /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelFormal.scala
+2025.06.21 21:50:59 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:51:00 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:50:59 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:50:59 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:51:01 WARN  no build target for: /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala
+2025.06.21 21:51:01 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:51:01 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:51:01 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:51:01 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:51:30 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:51:33 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:53:40 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:53:40 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:53:40 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:58:17 WARN  no build target for: /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala
+2025.06.21 21:58:17 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:58:17 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:58:17 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:58:17 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:58:21 WARN  no build target for: /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala
+2025.06.21 21:58:21 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:58:22 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:58:21 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:59:35 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:59:36 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:59:36 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:59:35 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:59:35 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:59:36 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:59:36 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:59:37 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:59:37 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:59:37 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:59:37 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:59:37 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:59:37 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:59:38 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:59:39 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:59:39 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:59:39 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:59:39 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:59:39 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:59:40 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:59:39 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:59:41 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:59:41 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:59:42 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:59:41 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:59:42 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 21:59:42 WARN  no build target for: /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala
+2025.06.21 21:59:42 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 22:16:08 WARN  no build target for: /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala
+2025.06.21 22:16:08 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 22:16:08 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 22:16:08 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 22:16:10 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 22:16:10 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 22:16:11 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 22:16:11 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 22:16:11 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 22:16:11 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 22:16:11 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 22:16:11 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 22:16:11 INFO  Created report: Optional[file:///home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala]
+2025.06.21 22:16:11 INFO  empty definition using pc, found symbol in pc: `<none>`. (full report at: "/home/michele/spinalHDL/blink/.metals/.reports/metals-full/2025-06-21/r_empty-definition_22-16-11-717.md")
+2025.06.21 22:16:11 WARN  no build target for: /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala
+2025.06.21 22:16:11 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/BlinkTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6

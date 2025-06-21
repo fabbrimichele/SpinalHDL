@@ -1,9 +1,12 @@
 TARGET = Blink
+#DEVICE = xc6slx9-tqg144-3
+DEVICE = xc6slx9-2tqg144
+UCF = papilio_duo
 
-all: $(TARGET).edif
+all: $(TARGET)_routed.bit
 
-bitstream: $(TARGET).edif
-	hw/xilinx/build_bitstream.sh xc6slx9-tqg144-3 TARGET
+$(TARGET)_routed.bit: $(TARGET).edif
+	hw/xilinx/build_bitstream.sh ${TARGET} ${DEVICE} ${UCF}
 
 $(TARGET).edif: $(TARGET)TopLevel.v
 	yosys hw/yosys/synth.ys
@@ -17,6 +20,7 @@ $(TARGET)TopLevel.vhdl:
 clean:
 	rm -f hw/gen/*.v
 	rm -f hw/gen/*.vhd
-	rm -f target/*.edif
+	rm -f target/*.edf
 	rm -rf _xmsgs
 	rm -rf xlnx_auto_0_xdb
+	rm -rf target
