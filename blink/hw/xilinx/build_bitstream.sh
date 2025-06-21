@@ -12,11 +12,11 @@ echo "**************************************************************************
 source /opt/Xilinx/14.7/ISE_DS/settings64.sh
 
 cd target
-echo ngdbuild
+echo "** Running ngdbuild"
 ngdbuild -p ${DEVICE} -uc ../hw/xilinx/${UCF}.ucf ${TOPMODULE}.edf
-echo map
-map -p ${DEVICE} ${TOPMODULE}.ngd
-echo par
-par ${TOPMODULE}.ncd ${TOPMODULE}_routed.ncd
-echo bitgen
-bitgen ${TOPMODULE}_routed.ncd
+echo "** Running map"
+map -p ${DEVICE} ${TOPMODULE}.ngd -w 
+echo "** Running par"
+par ${TOPMODULE}.ncd ${TOPMODULE}_routed.ncd -w
+echo "** Running bitgen"
+bitgen ${TOPMODULE}_routed.ncd -w 

@@ -1,5 +1,4 @@
 TARGET = Blink
-#DEVICE = xc6slx9-tqg144-3
 DEVICE = xc6slx9-2tqg144
 UCF = papilio_duo
 
