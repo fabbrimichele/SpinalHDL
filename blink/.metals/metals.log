@@ -1,0 +1,461 @@
+2025.06.21 18:46:53 INFO  Started: Metals version 1.6.0 in folders '/home/michele/spinalHDL/blink' for client Visual Studio Code 1.101.0.
+2025.06.21 18:46:55 INFO  Attempting to connect to the build server...
+2025.06.21 18:46:55 INFO  Found a Bloop server running
+2025.06.21 18:46:55 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/michele/spinalHDL/blink/.metals/bsp.trace.json or /home/michele/.cache/metals/bsp.trace.json
+2025.06.21 18:46:54 INFO  time: Connected to build server in 0.34s
+2025.06.21 18:46:55 INFO  Connected to Build server: Bloop v2.0.10
+2025.06.21 18:46:55 INFO  Created report: Optional.empty
+2025.06.21 18:46:55 INFO  Empty build targets. Expected at least one build target identifier. (full report at: "/home/michele/spinalHDL/blink/.metals/.reports/bloop/2025-06-21/r_Empty build targets...._18-46-55-628.md")
+2025.06.21 18:46:55 INFO  Empty build targets. Expected at least one build target identifier. (full report at: "/home/michele/spinalHDL/blink/.metals/.reports/bloop/2025-06-21/r_Empty build targets...._18-46-55-628.md")
+2025.06.21 18:46:55 INFO  Empty build targets. Expected at least one build target identifier. (full report at: "/home/michele/spinalHDL/blink/.metals/.reports/bloop/2025-06-21/r_Empty build targets...._18-46-55-628.md")
+2025.06.21 18:46:55 INFO  Empty build targets. Expected at least one build target identifier. (full report at: "/home/michele/spinalHDL/blink/.metals/.reports/bloop/2025-06-21/r_Empty build targets...._18-46-55-628.md")
+2025.06.21 18:46:55 INFO  Empty build targets. Expected at least one build target identifier. (full report at: "/home/michele/spinalHDL/blink/.metals/.reports/bloop/2025-06-21/r_Empty build targets...._18-46-55-628.md")
+2025.06.21 18:46:55 INFO  time: Imported build in 0.23s
+2025.06.21 18:46:58 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-21-openjdk-amd64/src.zip, /usr/lib/jvm/java-21-openjdk-amd64/lib/src.zip. Java symbols will not be available.
+2025.06.21 18:46:58 INFO  time: indexed workspace in 2.3s
+2025.06.21 18:47:03 INFO  Shutting down server
+2025.06.21 18:47:03 INFO  shutting down Metals
+2025.06.21 18:47:03 INFO  Shut down connection with build server.
+2025.06.21 18:47:03 INFO  Exiting server
+2025.06.21 18:47:14 INFO  Started: Metals version 1.6.0 in folders '/home/michele/spinalHDL/blink, /home/michele/spinalHDL/MySpinalProject' for client Visual Studio Code 1.101.0.
+2025.06.21 18:47:16 INFO  Attempting to connect to the build server...
+2025.06.21 18:47:15 INFO  Attempting to connect to the build server...
+2025.06.21 18:47:16 INFO  Found a Bloop server running
+2025.06.21 18:47:15 INFO  Found a Bloop server running
+2025.06.21 18:47:16 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/michele/spinalHDL/blink/.metals/bsp.trace.json or /home/michele/.cache/metals/bsp.trace.json
+2025.06.21 18:47:15 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/michele/spinalHDL/MySpinalProject/.metals/bsp.trace.json or /home/michele/.cache/metals/bsp.trace.json
+2025.06.21 18:47:16 INFO  Attempting to connect to the build server...
+2025.06.21 18:47:16 INFO  Found a Bloop server running
+2025.06.21 18:47:16 INFO  time: Connected to build server in 0.52s
+2025.06.21 18:47:15 INFO  Connected to Build server: Bloop v2.0.10
+2025.06.21 18:47:16 INFO  Attempting to connect to the build server...
+2025.06.21 18:47:16 INFO  Found a Bloop server running
+2025.06.21 18:47:16 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/michele/spinalHDL/MySpinalProject/project/.metals/bsp.trace.json or /home/michele/.cache/metals/bsp.trace.json
+2025.06.21 18:47:16 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/michele/spinalHDL/MySpinalProject/project/project/.metals/bsp.trace.json or /home/michele/.cache/metals/bsp.trace.json
+2025.06.21 18:47:15 INFO  Empty build targets. Expected at least one build target identifier. (full report at: "/home/michele/spinalHDL/blink/.metals/.reports/bloop/2025-06-21/r_Empty build targets...._18-46-55-628.md")
+2025.06.21 18:47:16 INFO  time: Connected to build server in 0.71s
+2025.06.21 18:47:16 INFO  Connected to Build server: Bloop v2.0.10
+2025.06.21 18:47:15 INFO  Empty build targets. Expected at least one build target identifier. (full report at: "/home/michele/spinalHDL/blink/.metals/.reports/bloop/2025-06-21/r_Empty build targets...._18-46-55-628.md")
+2025.06.21 18:47:17 INFO  Empty build targets. Expected at least one build target identifier. (full report at: "/home/michele/spinalHDL/blink/.metals/.reports/bloop/2025-06-21/r_Empty build targets...._18-46-55-628.md")
+2025.06.21 18:47:17 INFO  Empty build targets. Expected at least one build target identifier. (full report at: "/home/michele/spinalHDL/blink/.metals/.reports/bloop/2025-06-21/r_Empty build targets...._18-46-55-628.md")
+2025.06.21 18:47:17 INFO  Empty build targets. Expected at least one build target identifier. (full report at: "/home/michele/spinalHDL/blink/.metals/.reports/bloop/2025-06-21/r_Empty build targets...._18-46-55-628.md")
+2025.06.21 18:47:16 INFO  time: Imported build in 0.35s
+2025.06.21 18:47:17 INFO  time: Imported build in 0.29s
+2025.06.21 18:47:20 INFO  Required scalafmt dialect rewrite to 'scala213'. Directories:
+- hw/spinal
+2025.06.21 18:47:23 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-21-openjdk-amd64/src.zip, /usr/lib/jvm/java-21-openjdk-amd64/lib/src.zip. Java symbols will not be available.
+2025.06.21 18:47:23 INFO  time: indexed workspace in 6.11s
+2025.06.21 18:47:25 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-21-openjdk-amd64/src.zip, /usr/lib/jvm/java-21-openjdk-amd64/lib/src.zip. Java symbols will not be available.
+2025.06.21 18:47:26 INFO  time: indexed workspace in 8.88s
+2025.06.21 18:48:22 INFO  Shutting down server
+2025.06.21 18:48:22 INFO  shutting down Metals
+2025.06.21 18:48:22 INFO  Shut down connection with build server.
+2025.06.21 18:48:22 INFO  Shut down connection with build server.
+2025.06.21 18:48:22 INFO  Shut down connection with build server.
+2025.06.21 18:48:22 INFO  Shut down connection with build server.
+2025.06.21 18:48:22 INFO  Exiting server
+2025.06.21 18:48:40 INFO  Started: Metals version 1.6.0 in folders '/home/michele/spinalHDL/blink, /home/michele/spinalHDL/MySpinalProject' for client Visual Studio Code 1.101.0.
+2025.06.21 18:48:42 INFO  Attempting to connect to the build server...
+2025.06.21 18:48:42 INFO  Attempting to connect to the build server...
+2025.06.21 18:48:42 INFO  Found a Bloop server running
+2025.06.21 18:48:42 INFO  Found a Bloop server running
+2025.06.21 18:48:42 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/michele/spinalHDL/MySpinalProject/.metals/bsp.trace.json or /home/michele/.cache/metals/bsp.trace.json
+2025.06.21 18:48:42 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/michele/spinalHDL/blink/.metals/bsp.trace.json or /home/michele/.cache/metals/bsp.trace.json
+2025.06.21 18:48:42 INFO  time: Connected to build server in 0.48s
+2025.06.21 18:48:43 INFO  Connected to Build server: Bloop v2.0.10
+2025.06.21 18:48:43 INFO  Attempting to connect to the build server...
+2025.06.21 18:48:43 INFO  Found a Bloop server running
+2025.06.21 18:48:43 INFO  Attempting to connect to the build server...
+2025.06.21 18:48:43 INFO  Found a Bloop server running
+2025.06.21 18:48:43 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/michele/spinalHDL/MySpinalProject/project/project/.metals/bsp.trace.json or /home/michele/.cache/metals/bsp.trace.json
+2025.06.21 18:48:43 INFO  Empty build targets. Expected at least one build target identifier. (full report at: "/home/michele/spinalHDL/blink/.metals/.reports/bloop/2025-06-21/r_Empty build targets...._18-46-55-628.md")
+2025.06.21 18:48:43 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/michele/spinalHDL/MySpinalProject/project/.metals/bsp.trace.json or /home/michele/.cache/metals/bsp.trace.json
+2025.06.21 18:48:43 INFO  Empty build targets. Expected at least one build target identifier. (full report at: "/home/michele/spinalHDL/blink/.metals/.reports/bloop/2025-06-21/r_Empty build targets...._18-46-55-628.md")
+2025.06.21 18:48:43 INFO  time: Connected to build server in 0.66s
+2025.06.21 18:48:43 INFO  Connected to Build server: Bloop v2.0.10
+2025.06.21 18:48:43 INFO  Empty build targets. Expected at least one build target identifier. (full report at: "/home/michele/spinalHDL/blink/.metals/.reports/bloop/2025-06-21/r_Empty build targets...._18-46-55-628.md")
+2025.06.21 18:48:43 INFO  Empty build targets. Expected at least one build target identifier. (full report at: "/home/michele/spinalHDL/blink/.metals/.reports/bloop/2025-06-21/r_Empty build targets...._18-46-55-628.md")
+2025.06.21 18:48:43 INFO  Empty build targets. Expected at least one build target identifier. (full report at: "/home/michele/spinalHDL/blink/.metals/.reports/bloop/2025-06-21/r_Empty build targets...._18-46-55-628.md")
+2025.06.21 18:48:43 INFO  time: Imported build in 0.28s
+2025.06.21 18:48:43 INFO  time: Imported build in 0.25s
+2025.06.21 18:48:46 INFO  Required scalafmt dialect rewrite to 'scala213'. Directories:
+- hw/spinal
+2025.06.21 18:48:47 INFO  Shutting down server
+2025.06.21 18:48:47 INFO  shutting down Metals
+2025.06.21 18:48:46 INFO  Shut down connection with build server.
+2025.06.21 18:48:47 INFO  Shut down connection with build server.
+2025.06.21 18:48:46 INFO  Shut down connection with build server.
+2025.06.21 18:48:47 INFO  Shut down connection with build server.
+2025.06.21 18:48:47 INFO  Exiting server
+2025.06.21 18:48:58 INFO  Started: Metals version 1.6.0 in folders '/home/michele/spinalHDL/blink, /home/michele/spinalHDL/MySpinalProject' for client Visual Studio Code 1.101.0.
+2025.06.21 18:49:00 INFO  Attempting to connect to the build server...
+2025.06.21 18:49:00 INFO  Attempting to connect to the build server...
+2025.06.21 18:49:00 INFO  Found a Bloop server running
+2025.06.21 18:49:00 INFO  Found a Bloop server running
+2025.06.21 18:49:01 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/michele/spinalHDL/blink/.metals/bsp.trace.json or /home/michele/.cache/metals/bsp.trace.json
+2025.06.21 18:49:00 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/michele/spinalHDL/MySpinalProject/.metals/bsp.trace.json or /home/michele/.cache/metals/bsp.trace.json
+2025.06.21 18:49:01 INFO  Attempting to connect to the build server...
+2025.06.21 18:49:01 INFO  Found a Bloop server running
+2025.06.21 18:49:01 INFO  Attempting to connect to the build server...
+2025.06.21 18:49:01 INFO  time: Connected to build server in 0.52s
+2025.06.21 18:49:01 INFO  Found a Bloop server running
+2025.06.21 18:49:01 INFO  Connected to Build server: Bloop v2.0.10
+2025.06.21 18:49:00 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/michele/spinalHDL/MySpinalProject/project/project/.metals/bsp.trace.json or /home/michele/.cache/metals/bsp.trace.json
+2025.06.21 18:49:01 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/michele/spinalHDL/MySpinalProject/project/.metals/bsp.trace.json or /home/michele/.cache/metals/bsp.trace.json
+2025.06.21 18:49:01 INFO  time: Connected to build server in 0.69s
+2025.06.21 18:49:01 INFO  Empty build targets. Expected at least one build target identifier. (full report at: "/home/michele/spinalHDL/blink/.metals/.reports/bloop/2025-06-21/r_Empty build targets...._18-46-55-628.md")
+2025.06.21 18:49:00 INFO  Connected to Build server: Bloop v2.0.10
+2025.06.21 18:49:01 INFO  Empty build targets. Expected at least one build target identifier. (full report at: "/home/michele/spinalHDL/blink/.metals/.reports/bloop/2025-06-21/r_Empty build targets...._18-46-55-628.md")
+2025.06.21 18:49:01 INFO  Empty build targets. Expected at least one build target identifier. (full report at: "/home/michele/spinalHDL/blink/.metals/.reports/bloop/2025-06-21/r_Empty build targets...._18-46-55-628.md")
+2025.06.21 18:49:01 INFO  Empty build targets. Expected at least one build target identifier. (full report at: "/home/michele/spinalHDL/blink/.metals/.reports/bloop/2025-06-21/r_Empty build targets...._18-46-55-628.md")
+2025.06.21 18:49:01 INFO  Empty build targets. Expected at least one build target identifier. (full report at: "/home/michele/spinalHDL/blink/.metals/.reports/bloop/2025-06-21/r_Empty build targets...._18-46-55-628.md")
+2025.06.21 18:49:01 INFO  time: Imported build in 0.36s
+2025.06.21 18:49:02 INFO  time: Imported build in 0.23s
+2025.06.21 18:49:05 INFO  Required scalafmt dialect rewrite to 'scala213'. Directories:
+- hw/spinal
+2025.06.21 18:49:09 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-21-openjdk-amd64/src.zip, /usr/lib/jvm/java-21-openjdk-amd64/lib/src.zip. Java symbols will not be available.
+2025.06.21 18:49:09 INFO  time: indexed workspace in 7.31s
+2025.06.21 18:49:11 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-21-openjdk-amd64/src.zip, /usr/lib/jvm/java-21-openjdk-amd64/lib/src.zip. Java symbols will not be available.
+2025.06.21 18:49:13 INFO  time: indexed workspace in 10s
+2025.06.21 18:50:09 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:50:09 WARN  no build target for: /home/michele/spinalHDL/blink/build.sbt
+2025.06.21 18:50:09 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:50:09 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:50:09 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:50:10 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:50:12 INFO  time: code lens generation in 3.09s
+2025.06.21 18:50:13 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:50:14 WARN  no build target for: /home/michele/spinalHDL/blink/build.sbt
+2025.06.21 18:50:14 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:50:14 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:50:14 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:50:14 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:50:18 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:50:24 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:50:24 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:50:24 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:50:27 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:50:27 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:50:27 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:50:27 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:50:28 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:50:28 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:50:28 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:50:30 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:50:37 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:50:37 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:50:37 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:50:37 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:50:37 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:50:38 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:50:39 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:50:39 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:50:39 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:50:39 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:50:39 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:50:39 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:50:39 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:50:39 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:50:40 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:50:40 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:50:40 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:50:40 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:50:40 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:50:40 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:50:40 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:50:41 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:50:42 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:50:42 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:50:42 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:50:43 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:50:43 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:50:43 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:50:43 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:50:43 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:50:45 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:50:45 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:50:45 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+Jun 21, 2025 6:50:46 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 72
+2025.06.21 18:50:46 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:50:46 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:50:46 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:50:46 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:50:46 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:51:07 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:51:07 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:51:09 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:51:09 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:51:10 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:51:11 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:51:11 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:51:11 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:51:11 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:51:12 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:51:12 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:51:12 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:51:12 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:51:13 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:51:12 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+Jun 21, 2025 6:51:13 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 100
+2025.06.21 18:51:12 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:51:13 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:51:13 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:51:13 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:51:13 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:51:14 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:51:20 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:51:20 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:51:20 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:51:20 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:51:20 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:51:20 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:51:21 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:51:21 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:51:21 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:51:21 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:51:22 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:51:22 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:51:22 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:51:22 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:51:22 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:51:46 WARN  no build target for: /home/michele/spinalHDL/blink/build.sc
+2025.06.21 18:51:46 INFO  no build target found for /home/michele/spinalHDL/blink/build.sc. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:51:47 INFO  no build target found for /home/michele/spinalHDL/blink/build.sc. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:51:46 INFO  no build target found for /home/michele/spinalHDL/blink/build.sc. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:51:47 INFO  no build target found for /home/michele/spinalHDL/blink/build.sc. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:51:47 INFO  no build target found for /home/michele/spinalHDL/blink/build.sc. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:51:48 INFO  no build target found for /home/michele/spinalHDL/blink/build.sc. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:51:48 INFO  no build target found for /home/michele/spinalHDL/blink/build.sc. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:51:49 WARN  no build target for: /home/michele/spinalHDL/blink/build.sbt
+2025.06.21 18:51:49 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:51:49 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:51:49 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:51:49 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:51:50 WARN  no build target for: /home/michele/spinalHDL/blink/build.sbt
+2025.06.21 18:51:50 INFO  Detected new build tool in /home/michele/spinalHDL/blink
+2025.06.21 18:51:50 INFO  Disconnecting from Bloop session...
+2025.06.21 18:51:50 INFO  Shut down connection with build server.
+2025.06.21 18:51:50 INFO  Attempting to connect to the build server...
+2025.06.21 18:51:50 INFO  Found a Bloop server running
+2025.06.21 18:51:50 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:51:50 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/michele/spinalHDL/blink/.metals/bsp.trace.json or /home/michele/.cache/metals/bsp.trace.json
+2025.06.21 18:51:50 INFO  time: Connected to build server in 0.14s
+2025.06.21 18:51:50 INFO  Connected to Build server: Bloop v2.0.10
+2025.06.21 18:51:50 INFO  Empty build targets. Expected at least one build target identifier. (full report at: "/home/michele/spinalHDL/blink/.metals/.reports/bloop/2025-06-21/r_Empty build targets...._18-46-55-628.md")
+2025.06.21 18:51:50 INFO  Empty build targets. Expected at least one build target identifier. (full report at: "/home/michele/spinalHDL/blink/.metals/.reports/bloop/2025-06-21/r_Empty build targets...._18-46-55-628.md")
+2025.06.21 18:51:50 INFO  Empty build targets. Expected at least one build target identifier. (full report at: "/home/michele/spinalHDL/blink/.metals/.reports/bloop/2025-06-21/r_Empty build targets...._18-46-55-628.md")
+2025.06.21 18:51:50 INFO  Empty build targets. Expected at least one build target identifier. (full report at: "/home/michele/spinalHDL/blink/.metals/.reports/bloop/2025-06-21/r_Empty build targets...._18-46-55-628.md")
+2025.06.21 18:51:50 INFO  Empty build targets. Expected at least one build target identifier. (full report at: "/home/michele/spinalHDL/blink/.metals/.reports/bloop/2025-06-21/r_Empty build targets...._18-46-55-628.md")
+2025.06.21 18:51:50 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:51:50 WARN  no build target for: /home/michele/spinalHDL/blink/build.sc
+2025.06.21 18:51:50 INFO  no build target found for /home/michele/spinalHDL/blink/build.sc. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:51:50 INFO  no build target found for /home/michele/spinalHDL/blink/build.sc. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:51:50 INFO  no build target found for /home/michele/spinalHDL/blink/build.sc. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:51:50 INFO  no build target found for /home/michele/spinalHDL/blink/build.sc. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:51:52 INFO  no build target found for /home/michele/spinalHDL/blink/build.sc. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:51:53 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-21-openjdk-amd64/src.zip, /usr/lib/jvm/java-21-openjdk-amd64/lib/src.zip. Java symbols will not be available.
+2025.06.21 18:51:53 INFO  time: indexed workspace in 2.6s
+2025.06.21 18:51:53 WARN  no build target for: /home/michele/spinalHDL/blink/build.sc
+2025.06.21 18:51:53 WARN  no build target for: /home/michele/spinalHDL/blink/build.sbt
+2025.06.21 18:51:53 INFO  no build target found for /home/michele/spinalHDL/blink/build.sc. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:52:01 WARN  no build target for: /home/michele/spinalHDL/blink/build.sbt
+2025.06.21 18:52:01 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:52:01 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:52:01 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:52:01 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:52:02 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:52:01 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:52:01 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:52:01 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:52:02 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:52:03 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:52:03 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:52:03 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:52:03 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:52:03 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:52:03 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:52:03 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:52:03 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:52:06 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:52:06 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:52:06 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:52:06 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:52:06 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:52:06 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:52:06 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:52:06 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:52:07 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:52:07 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:52:06 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:52:07 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:52:07 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:52:07 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:52:07 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:52:08 INFO  Detected new build tool in /home/michele/spinalHDL/blink
+2025.06.21 18:52:08 WARN  no build target for: /home/michele/spinalHDL/blink/build.sbt
+2025.06.21 18:52:08 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:52:08 INFO  Disconnecting from Bloop session...
+2025.06.21 18:52:08 INFO  Shut down connection with build server.
+2025.06.21 18:52:08 INFO  Attempting to connect to the build server...
+2025.06.21 18:52:08 INFO  Found a Bloop server running
+2025.06.21 18:52:08 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:52:08 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/michele/spinalHDL/blink/.metals/bsp.trace.json or /home/michele/.cache/metals/bsp.trace.json
+2025.06.21 18:52:08 INFO  time: Connected to build server in 0.14s
+2025.06.21 18:52:08 INFO  Connected to Build server: Bloop v2.0.10
+2025.06.21 18:52:08 INFO  Empty build targets. Expected at least one build target identifier. (full report at: "/home/michele/spinalHDL/blink/.metals/.reports/bloop/2025-06-21/r_Empty build targets...._18-46-55-628.md")
+2025.06.21 18:52:08 INFO  Empty build targets. Expected at least one build target identifier. (full report at: "/home/michele/spinalHDL/blink/.metals/.reports/bloop/2025-06-21/r_Empty build targets...._18-46-55-628.md")
+2025.06.21 18:52:08 INFO  Empty build targets. Expected at least one build target identifier. (full report at: "/home/michele/spinalHDL/blink/.metals/.reports/bloop/2025-06-21/r_Empty build targets...._18-46-55-628.md")
+2025.06.21 18:52:08 INFO  Empty build targets. Expected at least one build target identifier. (full report at: "/home/michele/spinalHDL/blink/.metals/.reports/bloop/2025-06-21/r_Empty build targets...._18-46-55-628.md")
+2025.06.21 18:52:08 INFO  Empty build targets. Expected at least one build target identifier. (full report at: "/home/michele/spinalHDL/blink/.metals/.reports/bloop/2025-06-21/r_Empty build targets...._18-46-55-628.md")
+2025.06.21 18:52:09 WARN  no build target for: /home/michele/spinalHDL/blink/build.sc
+2025.06.21 18:52:08 INFO  no build target found for /home/michele/spinalHDL/blink/build.sc. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:52:08 INFO  no build target found for /home/michele/spinalHDL/blink/build.sc. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:52:08 INFO  no build target found for /home/michele/spinalHDL/blink/build.sc. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:52:09 INFO  no build target found for /home/michele/spinalHDL/blink/build.sc. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:52:11 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-21-openjdk-amd64/src.zip, /usr/lib/jvm/java-21-openjdk-amd64/lib/src.zip. Java symbols will not be available.
+2025.06.21 18:52:11 INFO  time: indexed workspace in 2.22s
+2025.06.21 18:52:11 WARN  no build target for: /home/michele/spinalHDL/blink/build.sbt
+2025.06.21 18:52:11 WARN  no build target for: /home/michele/spinalHDL/blink/build.sc
+2025.06.21 18:52:11 INFO  no build target found for /home/michele/spinalHDL/blink/build.sc. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:53:55 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/Config.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:53:55 WARN  no build target for: /home/michele/spinalHDL/blink/hw/spinal/blink/Config.scala
+2025.06.21 18:53:56 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/Config.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:53:56 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/Config.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:53:56 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/Config.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:53:55 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/Config.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:53:57 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/Config.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:53:57 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/Config.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:53:57 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/Config.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:53:57 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/Config.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:53:59 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/Config.scala. Using presentation compiler with project's scala-library version: 3.3.6
+Jun 21, 2025 6:53:59 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 243
+2025.06.21 18:53:59 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/Config.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:53:59 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/Config.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:53:59 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/Config.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:53:59 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/Config.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:54:00 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/Config.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:53:59 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/Config.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:53:59 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/Config.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:54:00 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/Config.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:54:00 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/Config.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:54:00 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/Config.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:54:00 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/Config.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:54:00 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/Config.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:54:00 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/Config.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:54:00 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/Config.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:54:01 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/Config.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:54:03 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/Config.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:54:03 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/Config.scala. Using presentation compiler with project's scala-library version: 3.3.6
+Exception in thread "pool-98-thread-1" java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.onCompilerJobQueue$$anonfun$1(CompilerAccess.scala:244)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:153)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025.06.21 18:54:04 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/MyTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:54:04 WARN  no build target for: /home/michele/spinalHDL/blink/hw/spinal/blink/MyTopLevel.scala
+2025.06.21 18:54:04 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/MyTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:54:04 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/MyTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:54:04 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/MyTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:54:04 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/MyTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:54:05 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/MyTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:54:05 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/MyTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:54:05 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/MyTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:54:05 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/MyTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:54:05 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/MyTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:54:05 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/MyTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:54:05 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/MyTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:54:07 WARN  no build target for: /home/michele/spinalHDL/blink/hw/spinal/blink/MyTopLevel.scala
+2025.06.21 18:54:07 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/MyTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:54:07 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/MyTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:54:07 WARN  no build target for: /home/michele/spinalHDL/blink/hw/spinal/blink/MyTopLevelFormal.scala
+2025.06.21 18:54:07 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/MyTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:54:08 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/MyTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:54:07 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/MyTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:54:08 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/MyTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:54:09 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/MyTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:54:09 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/MyTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:54:09 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/MyTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:54:09 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/MyTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+Jun 21, 2025 6:54:09 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 307
+2025.06.21 18:54:09 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/MyTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:54:09 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/MyTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:54:09 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/MyTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:54:09 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/MyTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:54:10 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/MyTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:54:09 WARN  no build target for: /home/michele/spinalHDL/blink/hw/spinal/blink/MyTopLevelFormal.scala
+2025.06.21 18:54:10 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/MyTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:54:12 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/MyTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:54:12 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/MyTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:54:13 WARN  no build target for: /home/michele/spinalHDL/blink/hw/spinal/blink/Config.scala
+2025.06.21 18:54:12 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/Config.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:54:13 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/Config.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:54:12 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/Config.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:54:12 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/Config.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:54:13 WARN  no build target for: /home/michele/spinalHDL/blink/hw/spinal/blink/Config.scala
+2025.06.21 18:54:13 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/Config.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:54:15 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/MyTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:54:15 WARN  no build target for: /home/michele/spinalHDL/blink/hw/spinal/blink/MyTopLevelSim.scala
+2025.06.21 18:54:15 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/MyTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:54:15 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/MyTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:54:15 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/MyTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:54:15 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/MyTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:54:15 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/MyTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:54:17 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/MyTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:54:17 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/MyTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:54:17 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/MyTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:54:17 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/MyTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:54:17 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/MyTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:54:17 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/MyTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:54:17 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/MyTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:54:17 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/MyTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:54:18 WARN  no build target for: /home/michele/spinalHDL/blink/hw/spinal/blink/MyTopLevelSim.scala
+2025.06.21 18:54:18 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/MyTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:54:20 WARN  no build target for: /home/michele/spinalHDL/blink/hw/spinal/blink/Config.scala
+2025.06.21 18:54:20 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/Config.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:54:20 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/Config.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:54:20 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/Config.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:54:20 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/Config.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:54:59 WARN  no build target for: /home/michele/spinalHDL/blink/build.sbt
+2025.06.21 18:54:59 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:54:59 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:54:59 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:54:59 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:55:00 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:55:11 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:55:13 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:55:13 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:55:15 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:55:17 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:55:17 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:56:12 WARN  no build target for: /home/michele/spinalHDL/blink/hw/spinal/blink/Config.scala
+2025.06.21 18:56:12 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/Config.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:56:13 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/Config.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:56:12 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/Config.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:56:14 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/MyTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:56:14 WARN  no build target for: /home/michele/spinalHDL/blink/hw/spinal/blink/MyTopLevelFormal.scala
+2025.06.21 18:56:14 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/MyTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:56:14 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/MyTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:56:23 INFO  no build target found for /home/michele/spinalHDL/blink/build.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:56:23 INFO  no build target found for /home/michele/spinalHDL/blink/build.sc. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:56:23 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/Config.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:56:23 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/MyTopLevelSim.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:56:23 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/MyTopLevel.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:56:23 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/MyTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:56:32 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/MyTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:56:32 WARN  no build target for: /home/michele/spinalHDL/blink/hw/spinal/blink/MyTopLevelFormal.scala
+2025.06.21 18:56:32 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/MyTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:56:32 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/MyTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:56:32 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/MyTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:56:32 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/MyTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:56:40 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/MyTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:56:56 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/MyTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:57:34 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/MyTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:57:34 WARN  no build target for: /home/michele/spinalHDL/blink/hw/spinal/blink/MyTopLevelFormal.scala
+2025.06.21 18:57:34 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/MyTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.06.21 18:57:39 INFO  no build target found for /home/michele/spinalHDL/blink/hw/spinal/blink/MyTopLevelFormal.scala. Using presentation compiler with project's scala-library version: 3.3.6

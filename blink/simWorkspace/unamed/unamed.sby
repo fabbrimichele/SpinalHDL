@@ -1,0 +1,16 @@
+[tasks]
+bmc
+
+[options]
+bmc: mode bmc
+bmc: depth 10
+
+[engines]
+smtbmc --progress yices
+
+[script]
+read -formal unamed.sv
+prep  -top unamed
+
+[files]
+rtl/unamed.sv
