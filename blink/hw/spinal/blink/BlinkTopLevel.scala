@@ -9,24 +9,16 @@ case class BlinkTopLevel() extends Component {
         val led = out Bool()
     }
 
-    // Use internal clock domain from io.clk
-    val clkDomain = ClockDomain(
-        clock = io.clk,
-        config = ClockDomainConfig(resetKind = BOOT)
-    )
+    val ledReg =  Reg(Bool()) init(False)
+    val counter = Reg(UInt(25 bits)) init(0)
 
-    val area = new ClockingArea(clkDomain) {
-        val counter = Reg(UInt(25 bits)) init(0)  // Enough bits for 16 million
-        val ledReg  = Reg(Bool()) init(False)
-
-        counter := counter + 1
-        when(counter === U(16_000_000 - 1)) {
-            counter := 0
-            ledReg := ~ledReg
-        }
-
-        io.led := ledReg
+    counter := counter + 1
+    when(counter === U(16_000_000)) {
+        counter := 0
+        ledReg := ~ ledReg
     }
+
+    io.led := ledReg
 }
 
 object BlinkTopLevelVerilog extends App {

@@ -1,6 +1,6 @@
 TARGET = Blink
 DEVICE = xc6slx9-2tqg144
-UCF = papilio_duo
+UCF = papilio_duo_computing_shield
 
 all: $(TARGET)_routed.bit
 
@@ -15,6 +15,12 @@ $(TARGET)TopLevel.v:
 
 $(TARGET)TopLevel.vhdl:
 	sbt "runMain blink.BlinkTopLevelVhdl"
+
+prog-fpga:
+	papilio-prog -v -f target/$(TARGET)_routed.bit
+
+prog-flash:
+	echo TODO
 
 clean:
 	rm -f hw/gen/*.v
