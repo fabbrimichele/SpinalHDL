@@ -1,5 +1,7 @@
 {
     "files.watcherExclude": {
         "**/target": true
-    }
+    },
+    "java.jdt.ls.java.home": "/home/michele/.sdkman/candidates/java/17.0.15-tem",
+    "metals.javaHome": "/home/michele/.sdkman/candidates/java/11.0.27-tem"
 }
