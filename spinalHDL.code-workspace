@@ -1,15 +1,13 @@
 {
 	"folders": [
-		{
-			"path": "blink"
-		},
-		{
-			"path": "MySpinalProject"
-		}
-	],
+        {
+            "path": "blink"
+        }
+    ],
     "settings": {
         "files.watcherExclude": {
             "**/target": true
-        }
+        },
+        "makefile.configureOnOpen": false
     }
 }
