@@ -23,3 +23,4 @@ clean:
 	rm -rf _xmsgs
 	rm -rf xlnx_auto_0_xdb
 	rm -rf target
+
