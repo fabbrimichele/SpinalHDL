@@ -36,14 +36,23 @@ JTAG chainpos: 0 Device IDCODE = 0x24001093	Desc: XC6SLX9
 ```
 
 ### To program the FPGA (temporary):
+Run the following command (or use the Makefile):
 ```bash
 papilio-prog -v -f stream.bit
 ```
 
 ### To program the SPI Flash (permanent):
+Run the following command (or use the Makefile):
 ```bash
-papilio-prog
+papilio-prog -v -s a -r -f target/$(TARGET).bit -b hw/papilio-loader/bscan_spi_xc6slx9.bit
 ```
+| Option        | Meaning                                                 |
+|---------------|---------------------------------------------------------|
+| -v            | verbose                                                 |
+| -s a          | write to the flash                                      |
+| -r            | reset FPGA after programming                            |
+| -f bitfile    | bitstream to program                                    |
+| -b bitfile    | bscan_spi bit file - required to program the flash      |
 
 
 ## References
