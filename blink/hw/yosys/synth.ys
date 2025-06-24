@@ -1,4 +1,0 @@
-read_verilog hw/gen/BlinkTopLevel.v
-synth_xilinx -family xc6s -top BlinkTopLevel
-write_edif target/Blink.edf
-write_verilog target/netlist.v

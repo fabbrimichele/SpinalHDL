@@ -21,9 +21,9 @@ case class BlinkTopLevel() extends Component {
     }
 
     io.led1 := ledReg
-    io.led2 := True
-    io.led3 := False
-    io.led4 := True
+    io.led2 := !ledReg
+    io.led3 := ledReg
+    io.led4 := !ledReg
 
     // Remove io_ prefix
     noIoPrefix()
