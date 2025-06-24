@@ -47,5 +47,6 @@ papilio-prog
 
 
 ## References
-* [Papilio-DUO GitHub Repository](https://github.com/GadgetFactory/Papilio-DUO)
+* [Papilio-DUO GitHub](https://github.com/GadgetFactory/Papilio-DUO)
+* [Papilio-Loader GitHub](https://github.com/GadgetFactory/Papilio-Loader)
 * [Programming Papilio-DUO](https://github.com/defano/digital-design/blob/master/docs/papilio-instructions.md)

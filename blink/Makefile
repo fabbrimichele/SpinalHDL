@@ -19,7 +19,7 @@ prog-fpga:
 
 prog-flash:
 	echo "Programming Flash"
-	papilio-prog -v -f target/$(TARGET).bit -sa
+	papilio-prog -v -s a -r -f target/$(TARGET).bit -b hw/papilio-loader/bscan_spi_xc6slx9.bit
 
 clean:
 	rm -f hw/gen/*.v
