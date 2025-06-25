@@ -1,12 +1,12 @@
 #!/bin/bash
 
-TOPMODULE=$1
+TARGET=$1
 DEVICE=$2
 UCF=$3
 
 echo
 echo "*****************************************************************************"
-echo "Building design: '$TOPMODULE' for device '$DEVICE' and UCF '$UCF'"
+echo "Building design: '$TARGET' for device '$DEVICE' and UCF '$UCF'"
 echo "*****************************************************************************"
 
 source /opt/Xilinx/14.7/ISE_DS/settings64.sh
@@ -14,20 +14,16 @@ source /opt/Xilinx/14.7/ISE_DS/settings64.sh
 cd target
 
 echo "**** Running xst"
-xst -intstyle ise -ifn "../hw/xilinx/blink.xst" -ofn ${TOPMODULE}.syr
+xst -intstyle ise -ifn "../hw/xilinx/${TARGET}.xst" -ofn ${TARGET}.syr
 
 echo "**** Running ngdbuild"
-# ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc papilio_duo_computing_shield.ucf -p xc6slx9-tqg144-2 Blinker.ngc Blinker.ngd
-ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ../hw/xilinx/${UCF}.ucf -p ${DEVICE} ${TOPMODULE}.edf ${TOPMODULE}.ngd
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ../hw/xilinx/${UCF}.ucf -p ${DEVICE} ${TARGET}.edf ${TARGET}.ngd
 
 echo "**** Running map"
-# map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Blinker_map.ncd Blinker.ngd Blinker.pcf
-map -intstyle ise -p ${DEVICE} -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ${TOPMODULE}_map.ncd ${TOPMODULE}.ngd ${TOPMODULE}.pcf
+map -intstyle ise -p ${DEVICE} -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ${TARGET}_map.ncd ${TARGET}.ngd ${TARGET}.pcf
 
 echo "**** Running par"
-# par -w -intstyle ise -ol high -mt off Blinker_map.ncd Blinker.ncd Blinker.pcf
-par -w -intstyle ise -ol high -mt off ${TOPMODULE}_map.ncd ${TOPMODULE}.ncd ${TOPMODULE}.pcf
+par -w -intstyle ise -ol high -mt off ${TARGET}_map.ncd ${TARGET}.ncd ${TARGET}.pcf
 
 echo "**** Running bitgen"
-# bitgen -intstyle ise -f Blinker.ut Blinker.ncd
-bitgen -intstyle ise -f ../hw/xilinx/bitgen_config.ut ${TOPMODULE}.ncd
+bitgen -intstyle ise -f ../hw/xilinx/bitgen_config.ut ${TARGET}.ncd

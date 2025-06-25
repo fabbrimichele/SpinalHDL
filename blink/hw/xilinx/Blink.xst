@@ -1,5 +1,5 @@
 run
--ifn ../hw/xilinx/blink.prj
+-ifn ../hw/xilinx/Blink.prj
 -ofn Blink
 -ofmt NGC
 -p xc6slx9-2-tqg144
