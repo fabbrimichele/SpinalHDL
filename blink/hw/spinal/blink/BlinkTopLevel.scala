@@ -11,19 +11,19 @@ case class BlinkTopLevel() extends Component {
         val led4 = out Bool()
     }
 
-    val ledReg =  Reg(Bool()) init(False)
     val counter = Reg(UInt(25 bits)) init(0)
+    val ledCounter = Reg(UInt(4 bits)) init(0)
 
     counter := counter + 1
     when(counter === U(16_000_000)) {
         counter := 0
-        ledReg := ~ ledReg
+        ledCounter := ledCounter + 1
     }
 
-    io.led1 := ledReg
-    io.led2 := !ledReg
-    io.led3 := ledReg
-    io.led4 := !ledReg
+    io.led1 := ledCounter(0)
+    io.led2 := ledCounter(1)
+    io.led3 := ledCounter(2)
+    io.led4 := ledCounter(3)
 
     // Remove io_ prefix
     noIoPrefix()
