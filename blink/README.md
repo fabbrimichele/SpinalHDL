@@ -55,6 +55,16 @@ papilio-prog -v -s a -r -f target/$(TARGET).bit -b hw/papilio-loader/bscan_spi_x
 | -b bitfile    | bscan_spi bit file - required to program the flash      |
 
 
+## To restore the Visual Studio Code Metal plugin
+The Metal plugin from time to time has issues building the project, in order to fix it:
+1. Delete the folders: `.metals` and `.bloop`
+2. Exit Visual Studio Code
+3. If it complains the `.bloop` is missing press: 
+   1. `<CTRL>+<Shift>+<P>`
+   2. Type: `Metals: Restart Build Server`
+4. The build should start and a pop up will ask which builder to use
+   1. Select `sbt`
+
 ## References
 * [Papilio-DUO GitHub](https://github.com/GadgetFactory/Papilio-DUO)
 * [Papilio-Loader GitHub](https://github.com/GadgetFactory/Papilio-Loader)
