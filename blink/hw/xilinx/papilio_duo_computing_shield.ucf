@@ -64,10 +64,10 @@ NET reset         LOC="P102" | IOSTANDARD=LVTTL | DRIVE=8 | SLEW=FAST;          
 #NET PS2_DAT2      LOC="P66"  | IOSTANDARD=LVTTL | DRIVE=8 | SLEW=FAST;          # D9
 #NET AUDIO2_RIGHT  LOC="P61"  | IOSTANDARD=LVTTL | DRIVE=8 | SLEW=FAST;          # D10
 #NET AUDIO2_LEFT   LOC="P58"  | IOSTANDARD=LVTTL | DRIVE=8 | SLEW=FAST;          # D11
-NET led1          LOC="P56"  | IOSTANDARD=LVTTL | DRIVE=8 | SLEW=FAST;          # D12
-NET led2          LOC="P51"  | IOSTANDARD=LVTTL | DRIVE=8 | SLEW=FAST;          # D13
-NET led3          LOC="P48"  | IOSTANDARD=LVTTL | DRIVE=8 | SLEW=FAST;          # D14
-NET led4          LOC="P39"  | IOSTANDARD=LVTTL | DRIVE=8 | SLEW=FAST;          # D15
+NET led(0)         LOC="P56"  | IOSTANDARD=LVTTL | DRIVE=8 | SLEW=FAST;          # D12
+NET led(1)         LOC="P51"  | IOSTANDARD=LVTTL | DRIVE=8 | SLEW=FAST;          # D13
+NET led(2)         LOC="P48"  | IOSTANDARD=LVTTL | DRIVE=8 | SLEW=FAST;          # D14
+NET led(3)         LOC="P39"  | IOSTANDARD=LVTTL | DRIVE=8 | SLEW=FAST;          # D15
 
 #NET SRAM_ADDR(0)  LOC="P7"   | IOSTANDARD=LVTTL;                                # SRAM_ADDR0
 #NET SRAM_ADDR(1)  LOC="P8"   | IOSTANDARD=LVTTL;                                # SRAM_ADDR1

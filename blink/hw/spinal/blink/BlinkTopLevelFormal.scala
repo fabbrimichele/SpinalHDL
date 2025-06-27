@@ -9,7 +9,7 @@ object BlinkTopLevelFormal extends App {
   FormalConfig
     .withBMC(10)
     .doVerify(new Component {
-      val dut = FormalDut(BlinkTopLevel())
+      val dut = FormalDut(BlinkTopLevel(clockInHz = 10))
 
       // Ensure the formal test start with a reset
       assumeInitial(clockDomain.isResetActive)
