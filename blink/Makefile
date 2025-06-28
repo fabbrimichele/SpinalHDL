@@ -1,4 +1,5 @@
 TARGET = Blink
+TOPLEVEL = blink.BlinkTopLevel
 DEVICE = xc6slx9-tqg144-2
 UCF = papilio_duo_computing_shield
 
@@ -8,10 +9,10 @@ $(TARGET)_routed.bit: $(TARGET)TopLevel.v
 	hw/xilinx/build_bitstream.sh ${TARGET} ${DEVICE} ${UCF}
 
 $(TARGET)TopLevel.v: 
-	sbt "runMain blink.BlinkTopLevelVerilog"
+	sbt "runMain ${TOPLEVEL}Verilog"
 
 $(TARGET)TopLevel.vhdl:
-	sbt "runMain blink.BlinkTopLevelVhdl"
+	sbt "runMain ${TOPLEVEL}Vhdl"
 
 prog-fpga:
 	echo "Programming FPGA"

@@ -10,12 +10,12 @@ object BlinkTopLevelSim extends App {
 
         val period = 5
         dut.clockDomain.waitRisingEdge()
-        assert(dut.io.leds.toInt == 0)
+        assert(dut.io.led.toInt == 0)
 
         dut.clockDomain.waitRisingEdge(period + 1)
-        assert(dut.io.leds.toInt == 1)
+        assert(dut.io.led.toInt == 1)
 
         dut.clockDomain.waitRisingEdge(period + 1)
-        assert(dut.io.leds.toInt == 2)
+        assert(dut.io.led.toInt == 2)
     }
 }

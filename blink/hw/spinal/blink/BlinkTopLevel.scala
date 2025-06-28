@@ -8,7 +8,7 @@ case class BlinkTopLevel(clockInHz: Int) extends Component {
     val limit = clockInHz / countInHz
 
     val io = new Bundle {
-        val leds = out Bits(4 bits)
+        val led = out Bits(4 bits)
     }
 
     val counter = Reg(UInt(25 bits)) init(0)
@@ -20,7 +20,7 @@ case class BlinkTopLevel(clockInHz: Int) extends Component {
         ledCounter := ledCounter + 1
     }
 
-    io.leds := ledCounter.asBits
+    io.led := ledCounter.asBits
 
     // Remove io_ prefix
     noIoPrefix()
