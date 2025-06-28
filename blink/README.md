@@ -69,3 +69,5 @@ The Metal plugin from time to time has issues building the project, in order to 
 * [Papilio-DUO GitHub](https://github.com/GadgetFactory/Papilio-DUO)
 * [Papilio-Loader GitHub](https://github.com/GadgetFactory/Papilio-Loader)
 * [Programming Papilio-DUO](https://github.com/defano/digital-design/blob/master/docs/papilio-instructions.md)
+* [Computing Shield](https://oe7twj.at/index.php?title=FPGA/PapilioDuo#Computing_Shield)
+* [Installing Xilinx ISE WebPACK 14.7](https://blog.rcook.org/blog/2019/papilio-duo-part-1/)
