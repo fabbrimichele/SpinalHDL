@@ -17,7 +17,7 @@ echo "**** Running xst"
 xst -intstyle ise -ifn "../hw/xilinx/${TARGET}.xst" -ofn ${TARGET}.syr
 
 echo "**** Running ngdbuild"
-ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ../hw/xilinx/${UCF}.ucf -p ${DEVICE} ${TARGET}.edf ${TARGET}.ngd
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ../hw/xilinx/${UCF}.ucf -p ${DEVICE} ${TARGET}.ngc ${TARGET}.ngd
 
 echo "**** Running map"
 map -intstyle ise -p ${DEVICE} -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ${TARGET}_map.ncd ${TARGET}.ngd ${TARGET}.pcf

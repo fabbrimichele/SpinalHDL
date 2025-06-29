@@ -5,9 +5,6 @@ import vga.HVSyncGeneratorConfig._
 
 // Hardware definition
 case class VgaTopLevel(clockInHz: Int) extends Component {
-    val countInHz = 4
-    val limit = clockInHz / countInHz
-
     val io = new Bundle {
         val clk = in Bool()
         val vgaRed = out Bits(4 bits)
@@ -40,16 +37,7 @@ case class VgaTopLevel(clockInHz: Int) extends Component {
         io.vgaBlue := 0
     }
 
-    val counter = Reg(UInt(25 bits)) init(0)
-    val ledCounter = Reg(UInt(4 bits)) init(0)
-
-    counter := counter + 1
-    when(counter === U(limit)) {
-        counter := 0
-        ledCounter := ledCounter + 1
-    }
-
-    io.led := ledCounter.asBits
+    io.led := B"0101"
 
     // Remove io_ prefix
     noIoPrefix()
