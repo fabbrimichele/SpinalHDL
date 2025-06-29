@@ -6,16 +6,16 @@ import vga.HVSyncGeneratorConfig._
 // Hardware definition
 case class VgaTopLevel(clockInHz: Int) extends Component {
     val io = new Bundle {
-        val clk = in Bool()
-        val vgaRed = out Bits(4 bits)
+        val clk      = in Bool()
+        val vgaRed   = out Bits(4 bits)
         val vgaGreen = out Bits(4 bits)
-        val vgaBlue = out Bits(4 bits)
+        val vgaBlue  = out Bits(4 bits)
         val vgaHSync = out Bool
         val vgaVSync = out Bool
-        val led = out Bits(4 bits)
+        val led      = out Bits(4 bits)
     }
 
-    // DCM Clock
+    // Instantiate the 25MHz clock generator (DCM)
     val dcm = new Dcm25Mhz()
     dcm.io.clk32 := io.clk
     dcm.io.reset := False   
@@ -25,6 +25,7 @@ case class VgaTopLevel(clockInHz: Int) extends Component {
         reset = ~dcm.io.locked
     )
 
+    // Clock domain area for VGA timing logic
     new ClockingArea(pixelClock) {
         // HV Sync Generator
         val syncGen = HVSyncGenerator(Vga640x480at60Hz)
@@ -36,9 +37,9 @@ case class VgaTopLevel(clockInHz: Int) extends Component {
         val grid = syncGen.io.displayOn &&
             (((syncGen.io.vPos & U(7)) === U(0)) || ((syncGen.io.hPos & U(7)) === U(0)))
         
-        io.vgaRed := Mux(grid, B(15), B(0))
+        io.vgaRed   := Mux(grid, B(15), B(0))
         io.vgaGreen := Mux(stripes, B(15), B(0))
-        io.vgaBlue := Mux(stripes, B(15), B(0))
+        io.vgaBlue  := Mux(stripes, B(15), B(0))
     }
 
     io.led := B"0101"
