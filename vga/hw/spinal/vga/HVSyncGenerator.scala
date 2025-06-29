@@ -5,23 +5,28 @@ import spinal.core._
 // Hardware definition
 case class HVSyncGenerator(config: HVSyncGeneratorConfig) extends Component {
     val io = new Bundle {
+        val displayOn = out Bool
         val hSync = out Bool
         val vSync = out Bool
+        // Note config height and width can't be greater than vPos and hPos
+        val hPos = out UInt(11 bits)
+        val vPos = out UInt(11 bits)
     }
     
-     // TODO: there is a problem here the size of the register 
-     //       depends on configuration, perhaps use generics?
-     //       for the time being waisting some space
+    import config._
+
+    val hMaxxed = (io.hPos === hMax) | clockDomain.isResetActive
+    val vMaxxed = (io.vPos === vMax) | clockDomain.isResetActive
     val hPos = Reg(UInt(11 bits)) init(0)
     val vPos = Reg(UInt(11 bits)) init(0)
 
-    import config._
-
-    private val hMaxxed = (hPos === hMax) | clockDomain.isResetActive
-    private val vMaxxed = (vPos === vMax) | clockDomain.isResetActive
+    io.hPos := hPos
+    io.vPos := vPos
+    io.displayOn := (hPos <= hDisplay) && (vPos <= vDisplay);
+    io.hSync := hPos >= hSyncStart && hPos<= hSyncEnd
+    io.vSync := vPos >= vSyncStart && vPos<= vSyncEnd
 
     // Horizontal position counter
-    io.hSync := hPos >= hSyncStart && hPos<= hSyncEnd
     when(hMaxxed) {
         hPos := 0;
     } otherwise {
@@ -29,7 +34,6 @@ case class HVSyncGenerator(config: HVSyncGeneratorConfig) extends Component {
     }
    
     // Vertical position counter
-    io.vSync := (vPos >= vSyncStart && vPos<= vSyncEnd);
     when(hMaxxed) {
         when(vMaxxed) {
             vPos := 0;

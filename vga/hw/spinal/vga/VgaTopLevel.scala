@@ -27,14 +27,18 @@ case class VgaTopLevel(clockInHz: Int) extends Component {
 
     new ClockingArea(pixelClock) {
         // HV Sync Generator
-        val syncGenerator = HVSyncGenerator(Vga640x480at60Hz)
-        io.vgaHSync := syncGenerator.io.hSync
-        io.vgaVSync := syncGenerator.io.vSync
+        val syncGen = HVSyncGenerator(Vga640x480at60Hz)
+        io.vgaHSync := syncGen.io.hSync
+        io.vgaVSync := syncGen.io.vSync
 
         // RGB
-        io.vgaRed := 0
-        io.vgaGreen := 0
-        io.vgaBlue := 0
+        val stripes = syncGen.io.displayOn && (syncGen.io.vPos(4) === True)
+        val grid = syncGen.io.displayOn &&
+            (((syncGen.io.vPos & U(7)) === U(0)) || ((syncGen.io.hPos & U(7)) === U(0)))
+        
+        io.vgaRed := Mux(grid, B(15), B(0))
+        io.vgaGreen := Mux(stripes, B(15), B(0))
+        io.vgaBlue := Mux(stripes, B(15), B(0))
     }
 
     io.led := B"0101"
