@@ -1,1 +1,2 @@
 verilog work "../hw/gen/VgaTopLevel.v"
+verilog work "../hw/verilog/dcm25mhz.v"
