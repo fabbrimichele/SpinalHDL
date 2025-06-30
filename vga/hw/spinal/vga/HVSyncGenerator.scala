@@ -4,21 +4,20 @@ import spinal.core._
 
 // Hardware definition
 case class HVSyncGenerator(config: HVSyncGeneratorConfig) extends Component {
+    import config._
+
     val io = new Bundle {
         val displayOn = out Bool
         val hSync = out Bool
         val vSync = out Bool
-        // Note config height and width can't be greater than vPos and hPos
-        val hPos = out UInt(11 bits)
-        val vPos = out UInt(11 bits)
-    }
-    
-    import config._
+        val hPos = out UInt(hBitNum bits)
+        val vPos = out UInt(vBitNum bits)
+    }   
 
     val hMaxxed = (io.hPos === hMax) | clockDomain.isResetActive
     val vMaxxed = (io.vPos === vMax) | clockDomain.isResetActive
-    val hPos = Reg(UInt(11 bits)) init(0)
-    val vPos = Reg(UInt(11 bits)) init(0)
+    val hPos = Reg(UInt(hBitNum bits)) init(0)
+    val vPos = Reg(UInt(vBitNum bits)) init(0)
 
     io.hPos := hPos
     io.vPos := vPos
@@ -59,10 +58,12 @@ case class HVSyncGeneratorConfig(
     val hSyncStart    = hDisplay + hFront;
     val hSyncEnd      = hDisplay + hFront + hSync - 1;
     val hMax          = hDisplay + hBack + hFront + hSync - 1;
+    val hBitNum       = log2Up(hMax)
     // Vertical    
     val vSyncStart    = vDisplay + vBottom;
     val vSyncEnd      = vDisplay + vBottom + vSync - 1;
     val vMax          = vDisplay + vTop + vBottom + vSync - 1;
+    val vBitNum       = log2Up(vMax)
 }
 
 object HVSyncGeneratorConfig {
