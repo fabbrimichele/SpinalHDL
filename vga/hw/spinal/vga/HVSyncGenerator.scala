@@ -77,4 +77,14 @@ object HVSyncGeneratorConfig {
         vBottom    = 10,
         vSync      = 2,    
     ) 
+    val Vga640x400at70Hz = HVSyncGeneratorConfig(
+        hDisplay   = 640,
+        hBack      = 48, 
+        hFront     = 16,
+        hSync      = 96, 
+        vDisplay   = 400,
+        vTop       = 35, 
+        vBottom    = 12,
+        vSync      = 2,    
+    ) 
 }

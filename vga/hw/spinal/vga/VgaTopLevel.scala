@@ -28,11 +28,16 @@ case class VgaTopLevel(clockInHz: Int) extends Component {
     // Clock domain area for VGA timing logic
     new ClockingArea(pixelClock) {
         // HV Sync Generator
-        val syncGen = HVSyncGenerator(Vga640x480at60Hz)
+        val vgaConfig = Vga640x480at60Hz
+        val syncGen = HVSyncGenerator(vgaConfig)
         io.vgaHSync := syncGen.io.hSync
         io.vgaVSync := syncGen.io.vSync
 
-        // RGB
+        // TODO: find examples about how to create modules, it would
+        //       be great to move the pattern logic into a module.
+
+        // Pattern
+        /*
         val stripes = syncGen.io.displayOn && (syncGen.io.vPos(4) === True)
         val grid = syncGen.io.displayOn &&
             (((syncGen.io.vPos & U(7)) === U(0)) || ((syncGen.io.hPos & U(7)) === U(0)))
@@ -40,6 +45,47 @@ case class VgaTopLevel(clockInHz: Int) extends Component {
         io.vgaRed   := Mux(grid, B(15), B(0))
         io.vgaGreen := Mux(stripes, B(15), B(0))
         io.vgaBlue  := Mux(stripes, B(15), B(0))
+        */
+
+        // Ball
+        val ball = new Bundle {
+            val hPos = Reg(UInt(vgaConfig.hBitNum bits)) init(0)
+            val vPos = Reg(UInt(vgaConfig.vBitNum bits)) init(0)
+            val hMove = Reg(SInt(vgaConfig.hBitNum bits)) init(1)
+            val vMove = Reg(SInt(vgaConfig.vBitNum bits)) init(2)
+            val size = 10
+        }
+
+        when(syncGen.io.vSync.rise) {
+            ball.hPos := (ball.hPos.asSInt + ball.hMove).asUInt
+            ball.vPos := (ball.vPos.asSInt + ball.vMove).asUInt
+        }
+
+        val hCollide = ball.hPos >= (vgaConfig.hDisplay - ball.size)
+        val vCollide = ball.vPos >= (vgaConfig.vDisplay - ball.size)
+
+        when(hCollide) {
+            // The motion inversion is delayed by one clock cycle,
+            // so it needs to be triggered one pixel earlier.
+            ball.hPos := (ball.hPos.asSInt - ball.hMove).asUInt
+            ball.hMove := -ball.hMove 
+        }
+
+        when(vCollide) {
+            // The motion inversion is delayed by one clock cycle,
+            // so it needs to be triggered one pixel earlier.
+            ball.vPos := (ball.vPos.asSInt - ball.vMove).asUInt
+            ball.vMove := -ball.vMove 
+        }
+
+        val ballHGfx = (syncGen.io.hPos - ball.hPos) < ball.size
+        val ballVGfx = (syncGen.io.vPos - ball.vPos) < ball.size
+        val ballGfx = ballHGfx && ballVGfx
+
+
+        io.vgaRed   := Mux(ballGfx, B(15), B(0))
+        io.vgaGreen := Mux(ballGfx, B(15), B(0))
+        io.vgaBlue  := Mux(False, B(15), B(0))
     }
 
     io.led := B"0101"
