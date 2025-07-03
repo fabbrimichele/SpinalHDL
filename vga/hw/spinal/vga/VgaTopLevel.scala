@@ -82,10 +82,12 @@ case class VgaTopLevel(clockInHz: Int) extends Component {
         val ballVGfx = (syncGen.io.vPos - ball.vPos) < ball.size
         val ballGfx = ballHGfx && ballVGfx
 
+        val borderGfx = syncGen.io.hPos === 0 || syncGen.io.hPos === vgaConfig.hDisplay - 1 ||
+            syncGen.io.vPos === 0 || syncGen.io.vPos === vgaConfig.vDisplay - 1
 
         io.vgaRed   := Mux(ballGfx, B(15), B(0))
         io.vgaGreen := Mux(ballGfx, B(15), B(0))
-        io.vgaBlue  := Mux(False, B(15), B(0))
+        io.vgaBlue  := Mux(borderGfx, B(15), B(0))
     }
 
     io.led := B"0101"
