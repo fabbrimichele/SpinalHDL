@@ -5,6 +5,9 @@
         },
         {
             "path": "vga"
+        },
+        {
+            "path": "serial"
         }
     ],
     "settings": {
