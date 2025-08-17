@@ -13,8 +13,7 @@ case class SerialTopLevel() extends Component {
         val uart = master(Uart()) // Expose UART pins (txd, rxd), must be defined in the ucf
     }
 
-    io.led0 := io.switchDown
-
+    
     val uartCtrl = UartCtrl(
         config = UartCtrlInitConfig(
             baudrate = 9600,
@@ -27,19 +26,26 @@ case class SerialTopLevel() extends Component {
     io.uart <> uartCtrl.io.uart
 
     /* 
--    io.uart <> uartCtrl.io.uart    
--    
+    io.led0 := io.switchDown
+     // Write 'A's when switchDown is pressed     
 -    uartCtrl.io.write.valid := io.switchDown
 -    uartCtrl.io.write.payload := B('A'.toInt, 8 bits) // ASCII 'A'    
-     */
+    */
 
 
-    // Send a '\n' header before sending 'A'
+    // Send a sequence of "\nA", each every second
+    /*
     val write = Stream(Fragment(Bits(8 bits)))
     write.valid := CounterFreeRun(16_000_000).willOverflow
     write.fragment := B('A'.toInt, 8 bits) 
     write.last := True
     write.stage().insertHeader('\n').toStreamOfFragment >> uartCtrl.io.write
+    */
+    // Echo
+    // For VS Code Serial Monitor plugin, toggle the terminal mode.
+    // GTKTerminal can also be used.
+    uartCtrl.io.write <-< uartCtrl.io.read
+    io.led0 := uartCtrl.io.read.valid
    
     
     // Remove io_ prefix
