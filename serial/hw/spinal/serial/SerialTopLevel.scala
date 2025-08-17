@@ -13,9 +13,7 @@ case class SerialTopLevel() extends Component {
         val uart = master(Uart()) // Expose UART pins (txd, rxd), must be defined in the ucf
     }
 
-    val debounce = new ButtonDebounce()
-    debounce.io.button := io.switchDown
-    io.led0 := debounce.io.debounced
+    io.led0 := io.switchDown
 
     val uartCtrl = UartCtrl(
         config = UartCtrlInitConfig(
@@ -26,12 +24,24 @@ case class SerialTopLevel() extends Component {
         )
     )
     
-    io.uart <> uartCtrl.io.uart    
+    io.uart <> uartCtrl.io.uart
+
+    /* 
+-    io.uart <> uartCtrl.io.uart    
+-    
+-    uartCtrl.io.write.valid := io.switchDown
+-    uartCtrl.io.write.payload := B('A'.toInt, 8 bits) // ASCII 'A'    
+     */
+
+
+    // Send a '\n' header before sending 'A'
+    val write = Stream(Fragment(Bits(8 bits)))
+    write.valid := CounterFreeRun(16_000_000).willOverflow
+    write.fragment := B('A'.toInt, 8 bits) 
+    write.last := True
+    write.stage().insertHeader('\n').toStreamOfFragment >> uartCtrl.io.write
+   
     
-    uartCtrl.io.write.valid := debounce.io.debounced
-    uartCtrl.io.write.payload := B('A'.toInt, 8 bits) // ASCII 'A'
-
-
     // Remove io_ prefix
     noIoPrefix()
 }
