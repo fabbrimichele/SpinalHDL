@@ -3,45 +3,44 @@ package serial
 import spinal.core._
 import spinal.lib._
 import spinal.lib.com.uart._
+import spinal.lib.misc._
 
 // Hardware definition
 case class SerialTopLevel() extends Component {
     val io = new Bundle {
-        val send = in Bool()   // Trigger to send
+        val switchDown = in Bool()   // Trigger to send
+        val led0 = out Bool()
         val uart = master(Uart()) // Expose UART pins (txd, rxd), must be defined in the ucf
     }
 
-    // UART config: 38400 baud, 8N1, assuming 32 MHz clock
-    val uartCtrl = new UartCtrl(
-        UartCtrlGenerics(
-            dataWidthMax = 8,
-            clockDividerWidth = 20, // 12 should be enough, to be tested
-            preSamplingSize = 1,
-            samplingSize = 5,
-            postSamplingSize = 2
+    val debounce = new ButtonDebounce()
+    debounce.io.button := io.switchDown
+    io.led0 := debounce.io.debounced
+
+    val uartCtrl = UartCtrl(
+        config = UartCtrlInitConfig(
+            baudrate = 9600,
+            dataLength = 7,
+            parity = UartParityType.NONE,
+            stop = UartStopType.ONE
         )
     )
+    
+    io.uart <> uartCtrl.io.uart    
+    
+    uartCtrl.io.write.valid := debounce.io.debounced
+    uartCtrl.io.write.payload := B('A'.toInt, 8 bits) // ASCII 'A'
 
-    // connect all matching signals between the two bundles
-    io.uart <> uartCtrl.io.uart
-
-    // UART runtime configuration
-    uartCtrl.io.config.clockDivider := 833  // 32_000_000 / 38400
-    uartCtrl.io.config.frame.dataLength := 7  // 8 bits (0 to 7)
-    uartCtrl.io.config.frame.stop := UartStopType.ONE
-    uartCtrl.io.config.frame.parity := UartParityType.NONE
-    uartCtrl.io.writeBreak := False
-
-    // uartCtrl.io.write.valid := io.send
-    uartCtrl.io.write.valid := True
-    uartCtrl.io.write.payload := B("8'x41") // ASCII 'A'
 
     // Remove io_ prefix
     noIoPrefix()
 }
 
 object SerialTopLevelVerilog extends App {
-    Config.spinal.generateVerilog(SerialTopLevel()).printPruned()
+    SpinalConfig(
+        defaultClockDomainFrequency = FixedFrequency(32 MHz),
+        targetDirectory = "hw/gen"
+    ).generateVerilog(SerialTopLevel()).printPruned()
 }
 
 object SerialTopLevelVhdl extends App {

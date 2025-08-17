@@ -5,13 +5,13 @@ UCF = papilio_duo_computing_shield
 
 all: $(TARGET)_routed.bit
 
-$(TARGET)_routed.bit: $(TARGET)TopLevel.v
+$(TARGET)_routed.bit: gen/$(TARGET)TopLevel.v
 	hw/xilinx/build_bitstream.sh ${TARGET} ${DEVICE} ${UCF}
 
-$(TARGET)TopLevel.v: 
+gen/$(TARGET)TopLevel.v: 
 	sbt "runMain ${TOPLEVEL}Verilog"
 
-$(TARGET)TopLevel.vhdl:
+gen/$(TARGET)TopLevel.vhdl:
 	sbt "runMain ${TOPLEVEL}Vhdl"
 
 prog-fpga:
