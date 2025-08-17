@@ -43,7 +43,10 @@ case class SerialTopLevel() extends Component {
     */
     // Echo
     // For VS Code Serial Monitor plugin, toggle the terminal mode.
+    // It might be needed to toggle it more than once to make it work.
     // GTKTerminal can also be used.
+    // <-< convert the Flow to a Stream by adding a one-element 
+    // buffer that remembers the data until write.ready is true
     uartCtrl.io.write <-< uartCtrl.io.read
     io.led0 := uartCtrl.io.read.valid
    
