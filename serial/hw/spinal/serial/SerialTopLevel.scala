@@ -56,10 +56,7 @@ case class SerialTopLevel() extends Component {
 }
 
 object SerialTopLevelVerilog extends App {
-    SpinalConfig(
-        defaultClockDomainFrequency = FixedFrequency(32 MHz),
-        targetDirectory = "hw/gen"
-    ).generateVerilog(SerialTopLevel()).printPruned()
+    Config.spinal.generateVerilog(SerialTopLevel())
 }
 
 object SerialTopLevelVhdl extends App {
