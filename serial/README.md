@@ -66,15 +66,33 @@ papilio-prog -v -s a -r -f target/$(TARGET).bit -b hw/papilio-loader/bscan_spi_x
 | -b bitfile    | bscan_spi bit file - required to program the flash      |
 
 
-## To restore the Visual Studio Code Metal plugin
-The Metal plugin from time to time has issues building the project, in order to fix it:
-1. Delete the folders: `.metals` and `.bloop`
-2. Exit Visual Studio Code
-3. If it complains the `.bloop` is missing press: 
-   1. `<CTRL>+<Shift>+<P>`
-   2. Type: `Metals: Restart Build Server`
-4. The build should start and a pop up will ask which builder to use
-   1. Select `sbt`
+## IDE
+Go with IntelliJ IDEA. I couldn’t get VS Code to work reliably.
+
+## SpinalHDL Apb3UartCtrl memory map
+
+| Addr   | Name                 | Bits                      | Description                                  |
+|--------|----------------------|---------------------------|----------------------------------------------|
+| 0x00   | DATA                 | [7:0]                     | RXDATA (read) / TXDATA (write)               |
+|        |                      | [16]                      | RXVALID (1 = data available)                 |
+| 0x04   | STATUS / CONTROL     | [0]                       | TX_IE  (TX interrupt enable)                 |
+|        |                      | [1]                       | RX_IE  (RX interrupt enable)                 |
+|        |                      | [8]                       | TX_IP  (TX interrupt pending)                |
+|        |                      | [9]                       | RX_IP  (RX interrupt pending)                |
+|        |                      | [15]                      | TXFULL (TX FIFO full)                        |
+|        |                      | [23:16]                   | TX_FREE (TX FIFO free space)                 |
+|        |                      | [31:24]                   | RX_OCC  (RX FIFO occupancy)                  |
+| 0x08   | CLOCK DIVIDER        | [g.clockDividerWidth-1:0] | CLKDIV (baudrate divider)                    |
+| 0x0C   | FRAME CONFIG         | [7:0]                     | DATALEN (number of data bits − 1)            |
+|        |                      | [15:8]                    | PARITY (0=NONE, 1=EVEN, 2=ODD, …)            |
+|        |                      | [17:16]                   | STOP (0=1 stop, 1=2 stops, …)                |
+| 0x10   | ERROR / BREAK CTRL   | [0]                       | RX_ERR (sticky, cleared on read)             |
+|        |                      | [1]                       | RX_OVF (overflow error, sticky)              |
+|        |                      | [8]                       | RX_BRK (break active)                        |
+|        |                      | [9]                       | BRK_D (break detected, sticky)               |
+|        |                      | [10]                      | BRK_S (set TX break)                         |
+|        |                      | [11]                      | BRK_C (clear TX break)                       |
+
 
 ## References
 * [Papilio-DUO GitHub](https://github.com/GadgetFactory/Papilio-DUO)
