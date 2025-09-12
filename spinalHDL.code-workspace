@@ -14,6 +14,12 @@
         "files.watcherExclude": {
             "**/target": true
         },
-        "makefile.configureOnOpen": false
+        "makefile.configureOnOpen": false,
+
+        // Add Scala editor settings
+        "[scala]": {
+            "editor.tabSize": 2,
+            "editor.insertSpaces": true
+        }        
     }
 }
