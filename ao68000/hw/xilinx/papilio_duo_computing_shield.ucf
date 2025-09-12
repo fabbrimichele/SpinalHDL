@@ -10,12 +10,12 @@ CONFIG PROHIBIT=P60;
 # SpinalHDL reuquires io to lowercase
 # there might be a way to configure it though...
 
-NET clk             LOC="P94"  | IOSTANDARD=LVTTL | PERIOD=31.25ns;               # CLK
+#NET clk             LOC="P94"  | IOSTANDARD=LVTTL | PERIOD=31.25ns;               # CLK
 #NET uart_rxd       LOC="P46"  | IOSTANDARD=LVTTL;                                # RX
 #NET uart_txd       LOC="P141" | IOSTANDARD=LVTTL | DRIVE=8 | SLEW=FAST;          # TX
 #NET ARDUINO_RESET  LOC="P139" | IOSTANDARD=LVTTL;                                # ARDUINO_RESET
-NET uart_rxd        LOC="P116" | IOSTANDARD=LVTTL;                                # A0 - RS232_RX
-NET uart_txd        LOC="P117" | IOSTANDARD=LVTTL;                                # A1 - RS232_TX
+#NET uart_rxd        LOC="P116" | IOSTANDARD=LVTTL;                                # A0 - RS232_RX
+#NET uart_txd        LOC="P117" | IOSTANDARD=LVTTL;                                # A1 - RS232_TX
 #NET SD_MISO       LOC="P118" | IOSTANDARD=LVTTL;                                # A2
 #NET SD_CD         LOC="P119" | IOSTANDARD=LVTTL;                                # A3
 #NET PS2_DAT1      LOC="P120" | IOSTANDARD=LVTTL;                                # A4
@@ -33,7 +33,7 @@ NET uart_txd        LOC="P117" | IOSTANDARD=LVTTL;                              
 #NET SD_nCS        LOC="P112" | IOSTANDARD=LVTTL | DRIVE=8 | SLEW=FAST;          # B2
 #NET SW_LEFT       LOC="P111" | IOSTANDARD=LVTTL | DRIVE=8 | SLEW=FAST;          # B3
 NET switchDown      LOC="P105" | IOSTANDARD=LVTTL | DRIVE=8 | SLEW=FAST;          # B4
-NET reset           LOC="P102" | IOSTANDARD=LVTTL | DRIVE=8 | SLEW=FAST;          # B5
+#NET reset           LOC="P102" | IOSTANDARD=LVTTL | DRIVE=8 | SLEW=FAST;          # B5
 #NET SW_DOWN       LOC="P101" | IOSTANDARD=LVTTL | DRIVE=8 | SLEW=FAST;          # B6
 #NET SW_RIGHT      LOC="P100" | IOSTANDARD=LVTTL | DRIVE=8 | SLEW=FAST;          # B7
 #NET vgaHSync     LOC="P99"  | IOSTANDARD=LVTTL | DRIVE=8 | SLEW=FAST;          # C0

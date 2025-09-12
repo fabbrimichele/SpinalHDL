@@ -4,7 +4,8 @@ A Ao68000 project in SpinalHDL for the Papilio Duo dev board (Xilinx Spartan 6)
 * The testbench is into `hw/spinal/projectname/Ao68000TopLevelSim.scala`
 
 ## ao68000
-https://github.com/freecores/ao68000/tree/master
+* https://github.com/alfikpl/ao68000
+* https://github.com/alfikpl/aoOCS
 
 ## To configure the project
 * Java 17 is required

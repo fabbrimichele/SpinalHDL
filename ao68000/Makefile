@@ -1,4 +1,4 @@
-TARGET = ao68000
+TARGET = Ao68000
 TOPLEVEL = ao68000.Ao68000TopLevel
 DEVICE = xc6slx9-tqg144-2
 UCF = papilio_duo_computing_shield
