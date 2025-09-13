@@ -1,5 +1,16 @@
-To create another project the following files require adjustments:
-* Blink.prj
-* Blink.xst
+## Adding verilog or VHDL to the build
+Verilog and VHDL files need to be added to the file `Ao68000.prj`, e.g.
+```
+verilog work "../hw/gen/Ao68000TopLevel.v"
+vhdl work "../hw/gen/mergeRTL.vhd"
+verlig work "../hw/gen/mergeRTL.v"
+```
 
-An xst report can be found in target/${TARGET}.syr, where ${TARGET} is defined in the Makefile (e.g. Blink.syr)
+For example when adding a black box for verilog, the last line needs to be added
+
+## Use this project as template
+To create another project the following files require adjustments:
+* Ao68000.prj
+* Ao68000.xst
+
+An xst report can be found in `target/${TARGET}.syr`, where `${TARGET}` is defined in the Makefile (e.g. `Ao68000.syr`)
