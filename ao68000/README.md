@@ -81,4 +81,5 @@ Go with IntelliJ IDEA. I couldn’t get VS Code to work reliably.
 * [Programming Papilio-DUO](https://github.com/defano/digital-design/blob/master/docs/papilio-instructions.md)
 * [Computing Shield Doc](https://oe7twj.at/index.php?title=FPGA/PapilioDuo#Computing_Shield)
 * [Computing Shield Schematic](https://oe7twj.at/images/1/17/BPS6001_Classic_Computing_Shield.pdf)
+* [Computing Shield Pin Mapping](https://oe7twj.at/images/4/4d/Papilio_DUO_pinouts_image_for_cc.png)
 * [Installing Xilinx ISE WebPACK 14.7](https://blog.rcook.org/blog/2019/papilio-duo-part-1/)

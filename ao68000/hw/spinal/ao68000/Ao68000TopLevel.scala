@@ -10,15 +10,18 @@ import scala.language.postfixOps
 // Hardware definition
 case class Ao68000TopLevel() extends Component {
   val io = new Bundle {
-    //val switchDown = in Bool()   // Trigger to send
-    //val reset = in Bool()   // Trigger to send
+    val reset = in Bool()
     val led = out Bits(4 bits)
+    val switchLeft = in Bool()
+    val switchDown = in Bool()
+    val switchUp = in Bool()
+    val switchRight = in Bool()
   }
 
   val tg68000 = new Tg68000BB
 
   // 68000 control lines
-  tg68000.io.reset := True // No reset (active low)
+  tg68000.io.reset := !io.reset // No reset (active low)
   tg68000.io.dtack := False // Always valid (active low)
   tg68000.io.clkena_in := True
   tg68000.io.IPL := 0b111 // No interrupts (active low)
