@@ -1,2 +1,2 @@
 verilog work "../hw/gen/Ao68000TopLevel.v"
-verilog work "../hw/gen/mergeRTL.v"
+vhdl work "../hw/gen/mergeRTL.vhd"

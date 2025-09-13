@@ -3,10 +3,14 @@ A Ao68000 project in SpinalHDL for the Papilio Duo dev board (Xilinx Spartan 6)
 * The hardware description is into `hw/spinal/projectname/Ao68000TopLevel.scala`
 * The testbench is into `hw/spinal/projectname/Ao68000TopLevelSim.scala`
 
-## ao68000
+## 68000 cores
 * https://github.com/alfikpl/ao68000
 * https://github.com/alfikpl/aoOCS
 * https://github.com/vfinotti/ahb3lite_wb_bridge/blob/master/wb_to_ahb3lite.v
+* https://github.com/TobiFlex/TG68K.C
+
+## Motorola 68000
+* https://www.nxp.com/docs/en/reference-manual/MC68000UM.pdf
 
 ## To configure the project
 * Java 17 is required

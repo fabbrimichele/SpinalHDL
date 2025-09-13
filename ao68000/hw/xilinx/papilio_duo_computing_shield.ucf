@@ -7,10 +7,7 @@ CONFIG PROHIBIT=P144;
 CONFIG PROHIBIT=P69;
 CONFIG PROHIBIT=P60;
 
-# SpinalHDL reuquires io to lowercase
-# there might be a way to configure it though...
-
-#NET clk             LOC="P94"  | IOSTANDARD=LVTTL | PERIOD=31.25ns;               # CLK
+NET clk             LOC="P94"  | IOSTANDARD=LVTTL | PERIOD=31.25ns;               # CLK
 #NET uart_rxd       LOC="P46"  | IOSTANDARD=LVTTL;                                # RX
 #NET uart_txd       LOC="P141" | IOSTANDARD=LVTTL | DRIVE=8 | SLEW=FAST;          # TX
 #NET ARDUINO_RESET  LOC="P139" | IOSTANDARD=LVTTL;                                # ARDUINO_RESET
@@ -32,7 +29,7 @@ CONFIG PROHIBIT=P60;
 #NET SD_SCK        LOC="P114" | IOSTANDARD=LVTTL | DRIVE=8 | SLEW=FAST;          # B1
 #NET SD_nCS        LOC="P112" | IOSTANDARD=LVTTL | DRIVE=8 | SLEW=FAST;          # B2
 #NET SW_LEFT       LOC="P111" | IOSTANDARD=LVTTL | DRIVE=8 | SLEW=FAST;          # B3
-NET switchDown      LOC="P105" | IOSTANDARD=LVTTL | DRIVE=8 | SLEW=FAST;          # B4
+#NET switchDown      LOC="P105" | IOSTANDARD=LVTTL | DRIVE=8 | SLEW=FAST;          # B4
 #NET reset           LOC="P102" | IOSTANDARD=LVTTL | DRIVE=8 | SLEW=FAST;          # B5
 #NET SW_DOWN       LOC="P101" | IOSTANDARD=LVTTL | DRIVE=8 | SLEW=FAST;          # B6
 #NET SW_RIGHT      LOC="P100" | IOSTANDARD=LVTTL | DRIVE=8 | SLEW=FAST;          # B7
@@ -64,10 +61,10 @@ NET switchDown      LOC="P105" | IOSTANDARD=LVTTL | DRIVE=8 | SLEW=FAST;        
 #NET PS2_DAT2      LOC="P66"  | IOSTANDARD=LVTTL | DRIVE=8 | SLEW=FAST;          # D9
 #NET AUDIO2_RIGHT  LOC="P61"  | IOSTANDARD=LVTTL | DRIVE=8 | SLEW=FAST;          # D10
 #NET AUDIO2_LEFT   LOC="P58"  | IOSTANDARD=LVTTL | DRIVE=8 | SLEW=FAST;          # D11
-NET led0         LOC="P56"  | IOSTANDARD=LVTTL | DRIVE=8 | SLEW=FAST;          # D12
-#NET led(1)         LOC="P51"  | IOSTANDARD=LVTTL | DRIVE=8 | SLEW=FAST;          # D13
-#NET led(2)         LOC="P48"  | IOSTANDARD=LVTTL | DRIVE=8 | SLEW=FAST;          # D14
-#NET led(3)         LOC="P39"  | IOSTANDARD=LVTTL | DRIVE=8 | SLEW=FAST;          # D15
+NET led(0)         LOC="P56"  | IOSTANDARD=LVTTL | DRIVE=8 | SLEW=FAST;          # D12
+NET led(1)         LOC="P51"  | IOSTANDARD=LVTTL | DRIVE=8 | SLEW=FAST;          # D13
+NET led(2)         LOC="P48"  | IOSTANDARD=LVTTL | DRIVE=8 | SLEW=FAST;          # D14
+NET led(3)         LOC="P39"  | IOSTANDARD=LVTTL | DRIVE=8 | SLEW=FAST;          # D15
 
 #NET SRAM_ADDR(0)  LOC="P7"   | IOSTANDARD=LVTTL;                                # SRAM_ADDR0
 #NET SRAM_ADDR(1)  LOC="P8"   | IOSTANDARD=LVTTL;                                # SRAM_ADDR1

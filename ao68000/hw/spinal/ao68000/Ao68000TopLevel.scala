@@ -4,18 +4,31 @@ import spinal.core._
 import spinal.lib._
 import spinal.lib.com.uart._
 
+import scala.language.postfixOps
+
 //noinspection TypeAnnotation
 // Hardware definition
 case class Ao68000TopLevel() extends Component {
   val io = new Bundle {
-    val switchDown = in Bool()   // Trigger to send
-    val led0 = out Bool()
+    //val switchDown = in Bool()   // Trigger to send
+    //val reset = in Bool()   // Trigger to send
+    val led = out Bits(4 bits)
   }
 
-  // Instantiate the BlackBox
-  val switchLed = new SwitchLedBB
-  io.led0 := switchLed.io.led0
-  switchLed.io.switchDown := io.switchDown
+  val tg68000 = new Tg68000BB
+
+  // 68000 control lines
+  tg68000.io.reset := True // No reset (active low)
+  tg68000.io.dtack := False // Always valid (active low)
+  tg68000.io.clkena_in := True
+  tg68000.io.IPL := 0b111 // No interrupts (active low)
+
+  // Memory Data bus
+  tg68000.io.data_in := 0x4E71 // NOP - no operation
+
+  // Map Address bus to LEDs
+  io.led := tg68000.io.addr(25 downto 22).asBits // most 4 significant bits
+
 
   // Remove io_ prefix
   noIoPrefix()
