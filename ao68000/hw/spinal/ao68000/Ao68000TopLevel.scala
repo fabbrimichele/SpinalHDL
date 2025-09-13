@@ -7,21 +7,25 @@ import spinal.lib.com.uart._
 //noinspection TypeAnnotation
 // Hardware definition
 case class Ao68000TopLevel() extends Component {
-    val io = new Bundle {
-        val switchDown = in Bool()   // Trigger to send
-        val led0 = out Bool()
-    }
+  val io = new Bundle {
+    val switchDown = in Bool()   // Trigger to send
+    val led0 = out Bool()
+  }
 
-    io.switchDown <> io.led0
+  // Instantiate the BlackBox
+  val switchLed = new SwitchLedBB
+  io.led0 := switchLed.io.led0
+  switchLed.io.switchDown := io.switchDown
 
-    // Remove io_ prefix
-    noIoPrefix()
+  // Remove io_ prefix
+  noIoPrefix()
 }
 
 object Ao68000TopLevelVerilog extends App {
-  Config.spinal
+  val report = Config.spinal
     .generateVerilog(Ao68000TopLevel())
-    .printPruned()
+  report.mergeRTLSource("mergeRTL") // Merge all rtl sources into mergeRTL.vhd and mergeRTL.v files
+  report.printPruned()
 }
 
 object Ao68000TopLevelVhdl extends App {

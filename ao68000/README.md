@@ -6,6 +6,7 @@ A Ao68000 project in SpinalHDL for the Papilio Duo dev board (Xilinx Spartan 6)
 ## ao68000
 * https://github.com/alfikpl/ao68000
 * https://github.com/alfikpl/aoOCS
+* https://github.com/vfinotti/ahb3lite_wb_bridge/blob/master/wb_to_ahb3lite.v
 
 ## To configure the project
 * Java 17 is required
