@@ -1,7 +1,7 @@
 package ao68000
 
 import ao68000.core._
-import ao68000.io.Debounce
+import ao68000.io.{Debounce, LedMapped}
 import ao68000.memory._
 import spinal.core._
 import spinal.lib._
@@ -24,12 +24,36 @@ case class Ao68000TopLevel() extends Component {
   debounce.io.button := io.reset
 
   new ResetArea(debounce.io.result, cumulative = false) {
+    // CPU
     val cpu = Cpu68000()
-    val rom = RomMapped(baseAddress = 0x00000000)
 
-    cpu.io.bus <> rom.io.bus
+    // ROM
+    val rom = new Rom16x1024BB()
+    rom.io.addr := cpu.io.bus.addr(10 downto 1)
 
-    io.led := cpu.io.bus.addr(25 downto 22).asBits
+    // LEDs
+    val ledReg = Reg(Bits(4 bits)) init(0)
+    io.led := ledReg
+
+    // Address decoding
+    val hitRom = cpu.io.bus.as && cpu.io.bus.rw &&
+      (cpu.io.bus.addr < U(2048, 32 bits)) // ROM: 1024 words x 2 bytes
+    val hitLed = cpu.io.bus.as && !cpu.io.bus.rw &&
+      (cpu.io.bus.addr === U(0x00FF0000, 32 bits))
+
+    // DTACK combines all slave hits
+    cpu.io.bus.dtack := hitRom || hitLed
+
+    // Data routing: CPU reads from ROM
+    cpu.io.bus.dataIn := Mux(hitRom, rom.io.data_out, B(0,16 bits))
+
+    // CPU writes to LED register
+    when(hitLed && cpu.io.bus.lds){
+      ledReg := cpu.io.bus.dataOut(3 downto 0)
+    }
+
+    // Future devices can be added by defining more `hitDevice` signals
+    // and expanding the data mux & dtack OR chain
   }
 
   // Remove io_ prefix
