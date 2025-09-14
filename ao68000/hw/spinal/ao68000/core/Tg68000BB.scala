@@ -28,6 +28,7 @@ class Tg68000BB extends BlackBox {
   }
 
   // Map the clock domain
+  // Mapped in the wrapper
   mapClockDomain(clock = io.clk, reset = io.reset, resetActiveLevel = LOW)
 
   setDefinitionName("TG68") // This tells SpinalHDL which Verilog module to instantiate
