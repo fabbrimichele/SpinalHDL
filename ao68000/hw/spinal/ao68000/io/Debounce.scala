@@ -1,4 +1,4 @@
-package ao68000
+package ao68000.io
 
 import spinal.core._
 

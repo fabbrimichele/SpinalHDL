@@ -1,4 +1,4 @@
-package ao68000
+package ao68000.core
 
 import spinal.core._
 
@@ -28,7 +28,7 @@ class Tg68000BB extends BlackBox {
   }
 
   // Map the clock domain
-  mapClockDomain(clock = io.clk)
+  mapClockDomain(clock = io.clk, reset = io.reset, resetActiveLevel = LOW)
 
   setDefinitionName("TG68") // This tells SpinalHDL which Verilog module to instantiate
   addRTLPath("hw/vhdl/TG68.vhd") // Merge the file to the generated 'mergeRTL.v' file

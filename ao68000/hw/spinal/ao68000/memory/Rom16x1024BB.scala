@@ -1,4 +1,4 @@
-package ao68000
+package ao68000.memory
 
 import spinal.core._
 
