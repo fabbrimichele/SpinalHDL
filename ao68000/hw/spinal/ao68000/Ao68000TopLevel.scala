@@ -18,7 +18,6 @@ case class Ao68000TopLevel() extends Component {
     val switchDown = in Bool()
     val switchUp = in Bool()
     val switchRight = in Bool()
-    //val cpu  = master(CpuBus()) // CPU is master
   }
 
   val debounce = new Debounce
@@ -26,8 +25,8 @@ case class Ao68000TopLevel() extends Component {
 
   new ResetArea(debounce.io.result, cumulative = false) {
     val cpu = Cpu68000()
-
     val rom = RomMapped(baseAddress = 0x00000000)
+
     cpu.io.bus <> rom.io.bus
 
     io.led := cpu.io.bus.addr(25 downto 22).asBits
