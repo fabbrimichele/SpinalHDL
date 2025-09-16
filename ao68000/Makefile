@@ -5,7 +5,7 @@ UCF = papilio_duo_computing_shield
 
 all: $(TARGET)_routed.bit
 
-$(TARGET)_routed.bit: gen/$(TARGET)TopLevel.v gen/rom.hex
+$(TARGET)_routed.bit: gen/$(TARGET)TopLevel.vhdl gen/rom.hex
 	hw/xilinx/build_bitstream.sh ${TARGET} ${DEVICE} ${UCF}
 
 gen/$(TARGET)TopLevel.v: 

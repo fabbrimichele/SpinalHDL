@@ -19,7 +19,7 @@ case class Cpu68000() extends Component {
   tg68000.io.IPL := 0b111 // TODO: move interrupts into the CpuBus?
 
   // Bus <-> Core mapping
-  io.bus.addr := tg68000.io.addr
+  io.bus.addr := tg68000.io.addr.asUInt
   io.bus.dataOut := tg68000.io.data_out
   io.bus.rw := tg68000.io.rw
   io.bus.as := tg68000.io.as

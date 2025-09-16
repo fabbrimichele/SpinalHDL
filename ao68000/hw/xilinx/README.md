@@ -14,3 +14,12 @@ To create another project the following files require adjustments:
 * Ao68000.xst
 
 An xst report can be found in `target/${TARGET}.syr`, where `${TARGET}` is defined in the Makefile (e.g. `Ao68000.syr`)
+
+## Setting up GHDL
+Install:
+* libboost 
+  ```shell
+  sudo apt update
+  sudo apt install libboost-all-dev
+  ```
+* 

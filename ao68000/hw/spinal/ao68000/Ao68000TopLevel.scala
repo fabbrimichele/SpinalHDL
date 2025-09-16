@@ -1,10 +1,9 @@
 package ao68000
 
 import ao68000.core._
-import ao68000.io.{Debounce, LedMapped}
+import ao68000.io._
 import ao68000.memory._
 import spinal.core._
-import spinal.lib._
 
 import scala.language.postfixOps
 
@@ -23,7 +22,7 @@ case class Ao68000TopLevel() extends Component {
   val debounce = new Debounce
   debounce.io.button := io.reset
 
-  new ResetArea(debounce.io.result, cumulative = false) {
+  val resetArea = new ResetArea(debounce.io.result, cumulative = false) {
     // CPU
     val cpu = Cpu68000()
 
@@ -60,13 +59,8 @@ case class Ao68000TopLevel() extends Component {
   noIoPrefix()
 }
 
-object Ao68000TopLevelVerilog extends App {
-  val report = Config.spinal
-    .generateVerilog(Ao68000TopLevel())
+object Ao68000TopLevelVhdl extends App {
+  val report = Config.spinal.generateVhdl(Ao68000TopLevel())
   report.mergeRTLSource("mergeRTL") // Merge all rtl sources into mergeRTL.vhd and mergeRTL.v files
   report.printPruned()
-}
-
-object Ao68000TopLevelVhdl extends App {
-    Config.spinal.generateVhdl(Ao68000TopLevel())
 }

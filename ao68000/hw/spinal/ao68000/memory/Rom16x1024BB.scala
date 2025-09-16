@@ -15,6 +15,6 @@ class Rom16x1024BB extends BlackBox {
   mapClockDomain(clock = io.clk)
 
   setDefinitionName("rom_16x1024") // This tells SpinalHDL which Verilog module to instantiate
-  addRTLPath("hw/verilog/rom_16x1024.v") // Merge the file to the generated 'mergeRTL.v' file
+  addRTLPath("hw/vhdl/rom_16x1024.vhd") // Merge the file to the generated 'mergeRTL.v' file
   noIoPrefix() // Remove io_ prefix
 }
