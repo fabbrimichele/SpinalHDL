@@ -42,7 +42,7 @@
     ; Program code
     ; ------------------------------
 START:  LEA     LED,A0          ; Load LED register address into A0
-        MOVE.B  #1,(A0)         ; Write 1 into LED register (lower 8 bits)
+        MOVE.W  #1,(A0)         ; Write 1 into LED register (lower 8 bits)
         NOP
 
 LOOP:   JMP   LOOP            ; Infinite loop

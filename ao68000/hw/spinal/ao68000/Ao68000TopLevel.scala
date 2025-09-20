@@ -52,7 +52,7 @@ case class Ao68000TopLevel() extends Component {
     cpu.io.bus.dataIn := rom.io.data_out
 
     // CPU writes to LED register
-    when(hitLed && !cpu.io.bus.lds){
+    when(hitLed){
       ledReg := cpu.io.bus.dataOut(3 downto 0)
     }
 
