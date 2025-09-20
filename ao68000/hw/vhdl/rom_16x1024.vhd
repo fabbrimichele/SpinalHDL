@@ -25,7 +25,7 @@ architecture rtl of rom_16x1024 is
         69 => x"4E71", -- 8a: nop
         70 => x"4EF8", -- 8c: jmp 0x8c
         71 => x"008C",
-        others => x"0000" -- fill remaining words with NOP
+        others => x"4E71" -- fill remaining words with NOP
     );
 begin
 
