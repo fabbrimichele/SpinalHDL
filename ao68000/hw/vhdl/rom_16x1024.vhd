@@ -17,13 +17,13 @@ architecture rtl of rom_16x1024 is
         1  => x"0000",
         2  => x"0000",
         3  => x"0080",
-        64 => x"41F9",
+        64 => x"41F9", -- 80: lea 0xff0000,%a0
         65 => x"00FF",
         66 => x"0000",
-        67 => x"30BC",
+        67 => x"30BC", -- 86: movew #1,%a0@
         68 => x"0001",
-        69 => x"4E71",
-        70 => x"4EF8",
+        69 => x"4E71", -- 8a: nop
+        70 => x"4EF8", -- 8c: jmp 0x8c
         71 => x"008C",
         others => x"0000" -- fill remaining words with NOP
     );
