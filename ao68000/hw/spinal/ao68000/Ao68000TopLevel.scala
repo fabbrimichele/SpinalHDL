@@ -13,12 +13,10 @@ case class Ao68000TopLevel() extends Component {
   val io = new Bundle {
     val reset = in Bool()
     val led = out Bits(4 bits)
-/*
     val switchLeft = in Bool()
     val switchDown = in Bool()
     val switchUp = in Bool()
     val switchRight = in Bool()
-*/
   }
 
   val debounce = new Debounce
@@ -34,7 +32,7 @@ case class Ao68000TopLevel() extends Component {
     rom.io.addr := cpu.io.bus.addr(10 downto 1)
 
     // LEDs
-    val ledReg = Reg(Bits(4 bits)) init(0)
+    val ledReg = Reg(Bits(4 bits)) init 0
     io.led := ledReg
 
     // Address decoding
