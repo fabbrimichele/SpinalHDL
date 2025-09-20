@@ -19,7 +19,7 @@ case class Ao68000TopLevel() extends Component {
     val switchRight = in Bool()
   }
 
-  val debounce = new Debounce
+  val debounce = new Debouncer
   debounce.io.button := io.reset
 
   //val resetArea = new ResetArea(debounce.io.result, cumulative = false) { // TODO: the debounce is not working

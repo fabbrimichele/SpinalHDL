@@ -10,7 +10,7 @@ import scala.language.postfixOps
 // Debounce time = 2^19 / 32e6 ≈ 16.384 us (MSB flips at half count)
 // Wait, careful: MSB toggles at 2^(19-1)/f_clk ≈ 8.192 ms
 // Which is close to 10 ms target
-class Debounce(counterSize: Int = 19) extends Component {
+class Debouncer(counterSize: Int = 19) extends Component {
   val io = new Bundle {
     val button = in Bool()   // raw input
     val result = out Bool()  // debounced output
