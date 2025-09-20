@@ -24,7 +24,8 @@ object Ao68000TopLevelSim extends App {
     }
     .doSim { dut =>
       // Clock stimulus for 32 MHz
-      dut.clockDomain.forkStimulus(31.25 ns) // period in ns, this also trigger reset
+      // It should also trigger the reset, but it seems it doesn't work.
+      dut.clockDomain.forkStimulus(31.25 ns) // period in ns
 
       // Apply reset
       dut.io.reset #= true
