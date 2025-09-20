@@ -37,14 +37,15 @@
     DC.L   $00000000    ; 30: TRAPA
     DC.L   $00000000    ; 31: TRAPB
 
+    ORG    $0080        ; Start of memory
     ; ------------------------------
     ; Program code
     ; ------------------------------
 START:  LEA     LED,A0          ; Load LED register address into A0
-        MOVE.L  #1,(A0)         ; Write 1 into LED register (lower 8 bits)
+        MOVE.B  #1,(A0)         ; Write 1 into LED register (lower 8 bits)
         NOP
 
-LOOP:   BRA.S   LOOP            ; Infinite loop
+LOOP:   JMP   LOOP            ; Infinite loop
 
         ; ===========================
         ; Constants

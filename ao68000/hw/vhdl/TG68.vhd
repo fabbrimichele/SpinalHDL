@@ -83,25 +83,25 @@ ARCHITECTURE logic OF TG68 IS
 	END COMPONENT;
 
 
-   SIGNAL as_s        : std_logic;
-   SIGNAL as_e        : std_logic;
-   SIGNAL uds_s       : std_logic;
-   SIGNAL uds_e       : std_logic;
-   SIGNAL lds_s       : std_logic;
-   SIGNAL lds_e       : std_logic;
-   SIGNAL rw_s        : std_logic;
-   SIGNAL rw_e        : std_logic;
-   SIGNAL waitm       : std_logic;
-   SIGNAL clkena_e    : std_logic;
-   SIGNAL S_state     : std_logic_vector(1 downto 0);
-   SIGNAL decode	  : std_logic;
-   SIGNAL wr	      : std_logic;
-   SIGNAL uds_in	  : std_logic;
-   SIGNAL lds_in	  : std_logic;
-   SIGNAL state       : std_logic_vector(1 downto 0);
-   SIGNAL clkena	  : std_logic;
-   SIGNAL n_clk		  : std_logic;
-   SIGNAL cpuIPL      : std_logic_vector(2 downto 0);
+   SIGNAL as_s        : std_logic := '0';
+   SIGNAL as_e        : std_logic := '0';
+   SIGNAL uds_s       : std_logic := '0';
+   SIGNAL uds_e       : std_logic := '0';
+   SIGNAL lds_s       : std_logic := '0';
+   SIGNAL lds_e       : std_logic := '0';
+   SIGNAL rw_s        : std_logic := '0';
+   SIGNAL rw_e        : std_logic := '0';
+   SIGNAL waitm       : std_logic := '0';
+   SIGNAL clkena_e    : std_logic := '0';
+   SIGNAL S_state     : std_logic_vector(1 downto 0):= (others => '0');
+   SIGNAL decode	  : std_logic := '0';
+   SIGNAL wr	      : std_logic := '0';
+   SIGNAL uds_in	  : std_logic := '0';
+   SIGNAL lds_in	  : std_logic := '0';
+   SIGNAL state       : std_logic_vector(1 downto 0):= (others => '0');
+   SIGNAL clkena	  : std_logic := '0';
+   SIGNAL n_clk		  : std_logic := '0';
+   SIGNAL cpuIPL      : std_logic_vector(2 downto 0):= (others => '0');
 
 
 BEGIN

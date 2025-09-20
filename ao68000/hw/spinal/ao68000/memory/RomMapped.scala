@@ -20,7 +20,7 @@ case class RomMapped(baseAddress: BigInt) extends Component {
   romBB.io.addr := addr(10 downto 1)
 
   // Address decode
-  val hit = as && rw //&&
+  val hit = as && rw &&
     (addr >= U(baseAddress, 32 bits)) &&
     (addr < U(baseAddress + 2048, 32 bits))
 

@@ -26,6 +26,9 @@ prog-flash:
 	echo "Programming Flash"
 	papilio-prog -v -s a -r -f target/$(TARGET).bit -b hw/papilio-loader/bscan_spi_xc6slx9.bit
 
+disassemble:
+	m68k-elf-objdump -D -b binary -m m68k --adjust-vma=0x0 hw/gen/blinker.bin
+
 clean:
 	rm -f hw/gen/*.v
 	rm -f hw/gen/*.vhd
