@@ -8,6 +8,7 @@ import spinal.sim.GhdlFlags
 import scala.language.postfixOps
 
 object ResetControllerSim extends App {
+  val resetHoldCycles = 5
   val flagExplicit = "-fexplicit" // This is required to make GHDL compile TG68.vhd
   Config.sim
     .withGHDL(GhdlFlags().withElaborationFlags(flagExplicit, "--warn-no-specs"))
@@ -16,19 +17,19 @@ object ResetControllerSim extends App {
     .addRtl("/home/michele/spinalHDL/ao68000/hw/vhdl/TG68_fast.vhd")
     .addRtl("/home/michele/spinalHDL/ao68000/hw/vhdl/rom_16x1024.vhd")
     .compile {
-      val dut = ResetController(resetHoldCycles = 5)
+      val dut = ResetController(resetHoldCycles)
       dut.counter.simPublic()
       dut
     }
     .doSim { dut =>
+      var cycle = 0
+
       // Init
       dut.io.button #= false
-      var cycle = 0
 
       // Run
       dut.clockDomain.forkStimulus(31.25 ns) // period in ns
-      while (cycle <= 7) {
-        dut.clockDomain.waitRisingEdge()
+      dut.clockDomain.onRisingEdges {
         println(f"Cycle: $cycle%4d" +
           f"| button: ${boolToBit(dut.io.button)}" +
           f"| reset: ${boolToBit(dut.io.resetOut)}" +
@@ -37,28 +38,29 @@ object ResetControllerSim extends App {
         cycle += 1
       }
 
+      // Give the simulation the time to init the registers
+      // Real hardware does not need it
+      dut.clockDomain.waitRisingEdge(1)
+      assert(dut.io.resetOut.toBoolean, "Expected reset active")
+
+      // After resetHoldCycles cycles reset inactive
+      dut.clockDomain.waitRisingEdge(resetHoldCycles)
+      assert(!dut.io.resetOut.toBoolean, "Expected reset inactive")
+
+      // Push reset button
       dut.io.button #= true
-      // dut.clockDomain.waitSampling(5) // Wait for 5 clock cycles
-      while (cycle <= 10) {
-        dut.clockDomain.waitRisingEdge()
-        println(f"Cycle: $cycle%4d" +
-          f"| button: ${boolToBit(dut.io.button)}" +
-          f"| reset: ${boolToBit(dut.io.resetOut)}" +
-          f"| counter: ${dut.counter.toLong}%4d"
-        )
-        cycle += 1
-      }
-      dut.io.button #= false
+      dut.clockDomain.waitRisingEdge(2) // Give time to set registers
+      assert(dut.io.resetOut.toBoolean, "Expected reset active")
 
-      while (cycle <= 20) {
-        dut.clockDomain.waitRisingEdge()
-        println(f"Cycle: $cycle%4d" +
-          f"| button: ${boolToBit(dut.io.button)}" +
-          f"| reset: ${boolToBit(dut.io.resetOut)}" +
-          f"| counter: ${dut.counter.toLong}%4d"
-        )
-        cycle += 1
-      }
+      // Release reset button, reset still active
+      dut.io.button #= false
+      dut.clockDomain.waitRisingEdge(resetHoldCycles - 1)
+      assert(dut.io.resetOut.toBoolean, "Expected reset active")
+
+      // After reset period, reset inactive
+      dut.clockDomain.waitRisingEdge(resetHoldCycles)
+      assert(!dut.io.resetOut.toBoolean, "Expected reset inactive")
+
     }
 
   private def boolToBit(b: Bool) = if (b.toBoolean) "1" else "0"
