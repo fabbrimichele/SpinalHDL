@@ -1,6 +1,5 @@
 package ao68000
 
-import spinal.core.Component.push
 import spinal.core._
 import spinal.core.sim._
 import spinal.sim.GhdlFlags
@@ -32,6 +31,8 @@ object Ao68000TopLevelSim extends App {
       dut.clockDomain.waitRisingEdge(5)
       dut.io.reset #= false
       dut.clockDomain.waitRisingEdge(5)
+
+      // TODO: add assertions?
 
       // Run simulation for a while (adjust cycles as needed)
       for (i <- 0 until 50) {

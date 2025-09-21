@@ -18,11 +18,7 @@ case class Ao68000TopLevel() extends Component {
     val switchUp = in Bool()
     val switchRight = in Bool()
   }
-
-  val debounce = new Debouncer
-  debounce.io.button := io.reset
-
-  //val resetArea = new ResetArea(debounce.io.result, cumulative = false) { // TODO: the debounce is not working
+  // TODO: Add ResetController
   val resetArea = new ResetArea(io.reset, cumulative = false) {
     // CPU
     val cpu = Cpu68000()
