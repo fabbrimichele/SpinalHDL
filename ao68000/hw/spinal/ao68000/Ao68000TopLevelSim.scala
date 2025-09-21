@@ -26,16 +26,13 @@ object Ao68000TopLevelSim extends App {
       // It should also trigger the reset, but it seems it doesn't work.
       dut.clockDomain.forkStimulus(31.25 ns) // period in ns
 
-      // Apply reset
-      dut.io.reset #= true
-      dut.clockDomain.waitRisingEdge(5)
+      // Reset button not pushed
       dut.io.reset #= false
-      dut.clockDomain.waitRisingEdge(5)
 
-      // TODO: add assertions?
-
+      // TODO: add assertions
+      // TODO: ResetController makes GHDL log warnings
       // Run simulation for a while (adjust cycles as needed)
-      for (i <- 0 until 50) {
+      for (i <- 0 until 80) {
         dut.clockDomain.waitRisingEdge()
         val bus = dut.resetArea.cpu.io.bus
 
@@ -71,6 +68,8 @@ object Ao68000TopLevelSim extends App {
           f"| hitLed: $hitLed" +
           f"| LED: $led%04X")
       }
+
+      assert(dut.io.led.toLong == 1, "Expected LED to be '0001'")
     }
 
   private def boolToBit(b: Bool) = if (b.toBoolean) "1" else "0"

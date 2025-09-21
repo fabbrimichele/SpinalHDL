@@ -13,13 +13,12 @@ case class Ao68000TopLevel() extends Component {
   val io = new Bundle {
     val reset = in Bool()
     val led = out Bits(4 bits)
-    val switchLeft = in Bool()
-    val switchDown = in Bool()
-    val switchUp = in Bool()
-    val switchRight = in Bool()
   }
-  // TODO: Add ResetController
-  val resetArea = new ResetArea(io.reset, cumulative = false) {
+
+  val resetController = ResetController()
+  resetController.io.button := io.reset
+
+  val resetArea = new ResetArea(resetController.io.resetOut, cumulative = false) {
     // CPU
     val cpu = Cpu68000()
 
@@ -38,17 +37,15 @@ case class Ao68000TopLevel() extends Component {
       (cpu.io.bus.addr === U(0x00FF0000, 32 bits))
 
     // DTACK combines all slave hits
-    //cpu.io.bus.dtack := !(!hitRom || !hitLed)
-    cpu.io.bus.dtack := False
+    cpu.io.bus.dtack := !(!hitRom || !hitLed)
+    //cpu.io.bus.dtack := False
 
     // Data routing: CPU reads from ROM
-    //cpu.io.bus.dataIn := Mux(hitRom, rom.io.data_out, B(0,16 bits))
-    cpu.io.bus.dataIn := rom.io.data_out
+    cpu.io.bus.dataIn := Mux(hitRom, rom.io.data_out, B(0,16 bits))
+    //cpu.io.bus.dataIn := rom.io.data_out
 
     // CPU writes to LED register
-    when(hitLed){
-      ledReg := cpu.io.bus.dataOut(3 downto 0)
-    }
+    when(hitLed) { ledReg := cpu.io.bus.dataOut(3 downto 0) }
 
     // Future devices can be added by defining more `hitDevice` signals
     // and expanding the data mux & dtack OR chain
