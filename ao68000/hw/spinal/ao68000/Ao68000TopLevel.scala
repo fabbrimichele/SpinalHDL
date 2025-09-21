@@ -34,7 +34,7 @@ case class Ao68000TopLevel() extends Component {
     cpu.io.bus.dtack := !(!hitRom || !hitLed)
 
     // ROM
-    val rom = MemRom()
+    val rom = Rom16Bits(size = 1024, filename = "rom.hex")
     cpu.io.bus.dataIn := rom.io.dataOut
     rom.io.addr := cpu.io.bus.addr(10 downto 1)
     rom.io.en := hitRom
