@@ -22,33 +22,31 @@ case class Ao68000TopLevel() extends Component {
     // CPU
     val cpu = Cpu68000()
 
-    // ROM
-    val rom = new Rom16x1024BB()
-    rom.io.addr := cpu.io.bus.addr(10 downto 1)
-
-    // LEDs
-    val ledReg = Reg(Bits(4 bits)) init 0
-    io.led := ledReg
-
     // Address decoding
     val hitRom = !cpu.io.bus.as && cpu.io.bus.rw &&
       (cpu.io.bus.addr < U(2048, 32 bits)) // ROM: 1024 words x 2 bytes
     val hitLed = !cpu.io.bus.as && !cpu.io.bus.rw &&
       (cpu.io.bus.addr === U(0x00FF0000, 32 bits))
+    // Future devices can be added by defining more `hitDevice` signals
+
 
     // DTACK combines all slave hits
     cpu.io.bus.dtack := !(!hitRom || !hitLed)
-    //cpu.io.bus.dtack := False
 
-    // Data routing: CPU reads from ROM
-    cpu.io.bus.dataIn := Mux(hitRom, rom.io.data_out, B(0,16 bits))
-    //cpu.io.bus.dataIn := rom.io.data_out
+    // ROM
+    val rom = MemRom()
+    cpu.io.bus.dataIn := rom.io.dataOut
+    rom.io.addr := cpu.io.bus.addr(10 downto 1)
+    rom.io.en := hitRom
+
+    // LEDs
+    val ledReg = Reg(Bits(4 bits)) init 0
+    io.led := ledReg
 
     // CPU writes to LED register
-    when(hitLed) { ledReg := cpu.io.bus.dataOut(3 downto 0) }
-
-    // Future devices can be added by defining more `hitDevice` signals
-    // and expanding the data mux & dtack OR chain
+    when(hitLed) {
+      ledReg := cpu.io.bus.dataOut(3 downto 0)
+    }
   }
 
   // Remove io_ prefix
