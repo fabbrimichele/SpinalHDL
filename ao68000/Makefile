@@ -5,18 +5,20 @@ UCF = papilio_duo_computing_shield
 
 all: $(TARGET)_routed.bit
 
-$(TARGET)_routed.bit: gen/$(TARGET)TopLevel.vhdl rom.hex
+$(TARGET)_routed.bit: gen/$(TARGET)TopLevel.vhdl
 	hw/xilinx/build_bitstream.sh ${TARGET} ${DEVICE} ${UCF}
 
-gen/$(TARGET)TopLevel.v: 
+gen/$(TARGET)TopLevel.v: rom.hex
 	sbt "runMain ${TOPLEVEL}Verilog"
 
-gen/$(TARGET)TopLevel.vhdl:
+gen/$(TARGET)TopLevel.vhdl: rom.hex
 	sbt "runMain ${TOPLEVEL}Vhdl"
 
 rom.hex:
 	vasmm68k_mot -Fbin sw/asm/blinker.asm -o hw/gen/blinker.bin
 	xxd -p -c 2 hw/gen/blinker.bin | awk '{print toupper($$0)}' > hw/spinal/ao68000/memory/rom.hex
+	mkdir -p target/scala-2.13/classes/ao68000/memory/
+	cp hw/spinal/ao68000/memory/rom.hex target/scala-2.13/classes/ao68000/memory/rom.hex
 
 prog-fpga:
 	echo "Programming FPGA"
@@ -38,4 +40,5 @@ clean:
 	rm -rf _xmsgs
 	rm -rf xlnx_auto_0_xdb
 	rm -rf target
+	rm -rf hw/spinal/ao68000/memory/rom.hex
 
