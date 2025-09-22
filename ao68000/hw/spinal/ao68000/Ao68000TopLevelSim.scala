@@ -29,7 +29,6 @@ object Ao68000TopLevelSim extends App {
       // Reset button not pushed
       dut.io.reset #= false
 
-      // TODO: add assertions
       // TODO: ResetController makes GHDL log warnings
       // Run simulation for a while (adjust cycles as needed)
       for (i <- 0 until 80) {

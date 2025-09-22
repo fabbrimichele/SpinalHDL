@@ -16,7 +16,7 @@ import scala.util.Using
  */
 case class Rom16Bits(size: Int, filename: String) extends Component {
   val io = new Bundle {
-    val addr = in UInt(log2Up(size) bits)
+    val addr    = in UInt(log2Up(size) bits)
     val en      = in Bool()
     val dataOut = out Bits(16 bits)
   }
