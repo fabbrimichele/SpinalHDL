@@ -1,48 +1,62 @@
 package ao68000
 
 import ao68000.core._
-import ao68000.io.Debounce
+import ao68000.io._
 import ao68000.memory._
 import spinal.core._
-import spinal.lib._
 
 import scala.language.postfixOps
 
+/**
+ * Hardware definition
+ * @param romFilename name of the file containing the ROM content
+ */
 //noinspection TypeAnnotation
-// Hardware definition
-case class Ao68000TopLevel() extends Component {
+case class Ao68000TopLevel(romFilename: String = "blinker.hex") extends Component {
   val io = new Bundle {
     val reset = in Bool()
     val led = out Bits(4 bits)
-    val switchLeft = in Bool()
-    val switchDown = in Bool()
-    val switchUp = in Bool()
-    val switchRight = in Bool()
   }
 
-  val debounce = new Debounce
-  debounce.io.button := io.reset
+  val resetController = ResetController()
+  resetController.io.button := io.reset
 
-  new ResetArea(debounce.io.result, cumulative = false) {
+  val resetArea = new ResetArea(resetController.io.resetOut, cumulative = false) {
+    // CPU
     val cpu = Cpu68000()
-    val rom = RomMapped(baseAddress = 0x00000000)
 
-    cpu.io.bus <> rom.io.bus
+    // Address decoding
+    val hitRom = !cpu.io.bus.as && cpu.io.bus.rw &&
+      (cpu.io.bus.addr < U(2048, 32 bits)) // ROM: 1024 words x 2 bytes
+    val hitLed = !cpu.io.bus.as && !cpu.io.bus.rw &&
+      (cpu.io.bus.addr === U(0x00FF0000, 32 bits))
+    // Future devices can be added by defining more `hitDevice` signals
 
-    io.led := cpu.io.bus.addr(25 downto 22).asBits
+    // DTACK combines all slave hits
+    cpu.io.bus.dtack := !(!hitRom || !hitLed)
+
+    // ROM
+    val rom = Rom16Bits(size = 1024, filename = romFilename)
+    cpu.io.bus.dataIn := rom.io.dataOut
+    rom.io.addr := cpu.io.bus.addr(10 downto 1)
+    rom.io.en := hitRom
+
+    // LEDs
+    val ledReg = Reg(Bits(4 bits)) init 0
+    io.led := ledReg
+
+    // CPU writes to LED register
+    when(hitLed) {
+      ledReg := cpu.io.bus.dataOut(3 downto 0)
+    }
   }
 
   // Remove io_ prefix
   noIoPrefix()
 }
 
-object Ao68000TopLevelVerilog extends App {
-  val report = Config.spinal
-    .generateVerilog(Ao68000TopLevel())
+object Ao68000TopLevelVhdl extends App {
+  val report = Config.spinal.generateVhdl(Ao68000TopLevel())
   report.mergeRTLSource("mergeRTL") // Merge all rtl sources into mergeRTL.vhd and mergeRTL.v files
   report.printPruned()
-}
-
-object Ao68000TopLevelVhdl extends App {
-    Config.spinal.generateVhdl(Ao68000TopLevel())
 }

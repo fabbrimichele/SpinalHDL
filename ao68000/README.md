@@ -9,11 +9,18 @@ A Ao68000 project in SpinalHDL for the Papilio Duo dev board (Xilinx Spartan 6)
 * https://github.com/vfinotti/ahb3lite_wb_bridge/blob/master/wb_to_ahb3lite.v
 * https://github.com/TobiFlex/TG68K.C
 
+
+/home/michele/tools/oss-cad-suite/include/iverilog/vpi_user.h
+/home/michele/tools/oss-cad-suite/share/verilator/include/vltstd/vpi_user.h
+/opt/Xilinx/14.7/ISE_DS/PlanAhead/data/xsim/include/vpi_user.h
+
+
 ## Motorola 68000
 * https://www.nxp.com/docs/en/reference-manual/MC68000UM.pdf
 
 ## To configure the project
 * Java 17 is required
+* Install [GHDL](https://spinalhdl.github.io/SpinalDoc-RTD/master/SpinalHDL/Simulation/install/GHDL.html)
 
 ## To build the project
 ```bash

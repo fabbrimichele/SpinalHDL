@@ -18,7 +18,7 @@ class Tg68000BB extends BlackBox {
     val dtack      = in Bool()
 
     // CPU outputs
-    val addr       = out UInt(32 bits)
+    val addr       = out Bits(32 bits)
     val data_out   = out Bits(16 bits)
     val as         = out Bool()
     val uds        = out Bool()
