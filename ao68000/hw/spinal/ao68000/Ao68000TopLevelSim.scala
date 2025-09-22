@@ -15,7 +15,7 @@ object Ao68000TopLevelSim extends App {
     .addRtl("/home/michele/spinalHDL/ao68000/hw/vhdl/TG68_fast.vhd")
     .addRtl("/home/michele/spinalHDL/ao68000/hw/vhdl/rom_16x1024.vhd")
     .compile {
-      val dut = Ao68000TopLevel()
+      val dut = Ao68000TopLevel(romFilename = "led_on.hex")
       dut.resetArea.cpu.io.bus.simPublic() // <-- make it accessible
       dut.resetArea.cpu.tg68000.io.simPublic()
       dut.resetArea.hitLed.simPublic()

@@ -7,9 +7,12 @@ import spinal.core._
 
 import scala.language.postfixOps
 
+/**
+ * Hardware definition
+ * @param romFilename name of the file containing the ROM content
+ */
 //noinspection TypeAnnotation
-// Hardware definition
-case class Ao68000TopLevel() extends Component {
+case class Ao68000TopLevel(romFilename: String = "blinker.hex") extends Component {
   val io = new Bundle {
     val reset = in Bool()
     val led = out Bits(4 bits)
@@ -29,12 +32,11 @@ case class Ao68000TopLevel() extends Component {
       (cpu.io.bus.addr === U(0x00FF0000, 32 bits))
     // Future devices can be added by defining more `hitDevice` signals
 
-
     // DTACK combines all slave hits
     cpu.io.bus.dtack := !(!hitRom || !hitLed)
 
     // ROM
-    val rom = Rom16Bits(size = 1024, filename = "rom.hex")
+    val rom = Rom16Bits(size = 1024, filename = romFilename)
     cpu.io.bus.dataIn := rom.io.dataOut
     rom.io.addr := cpu.io.bus.addr(10 downto 1)
     rom.io.en := hitRom

@@ -8,17 +8,25 @@ all: $(TARGET)_routed.bit
 $(TARGET)_routed.bit: gen/$(TARGET)TopLevel.vhdl
 	hw/xilinx/build_bitstream.sh ${TARGET} ${DEVICE} ${UCF}
 
-gen/$(TARGET)TopLevel.v: rom.hex
+gen/$(TARGET)TopLevel.v: rom
 	sbt "runMain ${TOPLEVEL}Verilog"
 
-gen/$(TARGET)TopLevel.vhdl: rom.hex
+gen/$(TARGET)TopLevel.vhdl: rom
 	sbt "runMain ${TOPLEVEL}Vhdl"
 
-rom.hex:
+rom: blinker led_on
+
+blinker:
 	vasmm68k_mot -Fbin sw/asm/blinker.asm -o hw/gen/blinker.bin
-	xxd -p -c 2 hw/gen/blinker.bin | awk '{print toupper($$0)}' > hw/spinal/ao68000/memory/rom.hex
+	xxd -p -c 2 hw/gen/blinker.bin | awk '{print toupper($$0)}' > hw/spinal/ao68000/memory/blinker.hex
 	mkdir -p target/scala-2.13/classes/ao68000/memory/
-	cp hw/spinal/ao68000/memory/rom.hex target/scala-2.13/classes/ao68000/memory/rom.hex
+	cp hw/spinal/ao68000/memory/blinker.hex target/scala-2.13/classes/ao68000/memory/blinker.hex
+
+led_on:
+	vasmm68k_mot -Fbin sw/asm/led_on.asm -o hw/gen/led_on.bin
+	xxd -p -c 2 hw/gen/led_on.bin | awk '{print toupper($$0)}' > hw/spinal/ao68000/memory/led_on.hex
+	mkdir -p target/scala-2.13/classes/ao68000/memory/
+	cp hw/spinal/ao68000/memory/led_on.hex target/scala-2.13/classes/ao68000/memory/led_on.hex
 
 prog-fpga:
 	echo "Programming FPGA"
@@ -29,6 +37,7 @@ prog-flash:
 	papilio-prog -v -s a -r -f target/$(TARGET).bit -b hw/papilio-loader/bscan_spi_xc6slx9.bit
 
 disassemble:
+	m68k-elf-objdump -D -b binary -m m68k --adjust-vma=0x0 hw/gen/led_on.bin
 	m68k-elf-objdump -D -b binary -m m68k --adjust-vma=0x0 hw/gen/blinker.bin
 
 clean:
@@ -40,5 +49,6 @@ clean:
 	rm -rf _xmsgs
 	rm -rf xlnx_auto_0_xdb
 	rm -rf target
-	rm -rf hw/spinal/ao68000/memory/rom.hex
+	rm -rf hw/spinal/ao68000/memory/blinker.bin
+	rm -rf hw/spinal/ao68000/memory/led_on.bin
 

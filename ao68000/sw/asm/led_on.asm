@@ -41,21 +41,10 @@
     ; ------------------------------
     ; Program code
     ; ------------------------------
-START:
-    LEA     LED,A0          ; Load LED register address into A0
-    MOVE.W  #1,D1
+START:  LEA     LED,A0          ; Load LED register address into A0
+        MOVE.W  #1,(A0)         ; Write 1 into LED register (lower 8 bits)
 
-LOOP:
-    MOVE.W  D1,(A0)         ; Write 1 into LED register (lower 8 bits)
-    ADDQ.W  #1,D1           ; Increment register
-
-DELAY:
-    MOVE.L  #1333333,D0    ; about 1.33 million iterations
-DLY_LOOP:
-    SUBQ.L  #1,D0          ; 4 cycles
-    BNE     DLY_LOOP       ; 10 cycles when taken
-
-    JMP   LOOP            ; Infinite loop
+LOOP:   JMP   LOOP            ; Infinite loop
 
         ; ===========================
         ; Constants
