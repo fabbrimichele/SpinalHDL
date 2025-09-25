@@ -9,16 +9,11 @@ import scala.language.postfixOps
 object Ao68000TopLevelSim extends App {
   val flagExplicit = "-fexplicit" // This is required to make GHDL compile TG68.vhd
   Config.sim
-    .withGHDL(GhdlFlags().withElaborationFlags(flagExplicit, "--warn-no-specs"))
-    .addSimulatorFlag(flagExplicit) // Something is off, this is required, but it shouldn't
-    .addRtl("/home/michele/spinalHDL/ao68000/hw/vhdl/TG68.vhd")
-    .addRtl("/home/michele/spinalHDL/ao68000/hw/vhdl/TG68_fast.vhd")
-    .addRtl("/home/michele/spinalHDL/ao68000/hw/vhdl/rom_16x1024.vhd")
     .compile {
       val dut = Ao68000TopLevel(romFilename = "led_on.hex")
       dut.resetArea.cpu.io.bus.simPublic() // <-- make it accessible
       dut.resetArea.cpu.tg68000.io.simPublic()
-      dut.resetArea.hitLed.simPublic()
+      dut.resetArea.addrDec.io.simPublic()
       dut
     }
     .doSim { dut =>
@@ -46,7 +41,7 @@ object Ao68000TopLevelSim extends App {
         val uds = boolToBit(tg68IO.io.uds)
 
         // LEDs
-        val hitLed = boolToBit(dut.resetArea.hitLed)
+        val ledEn = boolToBit(dut.resetArea.addrDec.io.ledEn)
         val led = dut.io.led.toLong
 
         val color = {
@@ -64,7 +59,7 @@ object Ao68000TopLevelSim extends App {
           f"| rw: $rw" +
           f"| uds: $uds" +
           f"| lds: $lds" +
-          f"| hitLed: $hitLed" +
+          f"| ledEn: $ledEn" +
           f"| LED: $led%04X")
       }
 
