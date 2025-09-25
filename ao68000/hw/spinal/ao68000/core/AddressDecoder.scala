@@ -16,9 +16,9 @@ case class AddressDecoder() extends Component {
   }
 
   io.romEn := !io.as && io.rw &&
-    (io.addr < U(0x00000800, 32 bits))                                        // 000000 - 004000
+    (io.addr < U(0x00000800, 32 bits))                                        // 000000 - 000800 (2KB)
   io.ramEn := !io.as &&
-    (io.addr >= U(0x0000800, 32 bits)) && (io.addr < U(0x00001000, 32 bits))  // 004000 - 008000
+    (io.addr >= U(0x0000800, 32 bits)) && (io.addr < U(0x00001000, 32 bits))  // 000800 - 001000 (2KB)
   io.ledEn := !io.as && !io.rw &&
     (io.addr === U(0x00FF0000, 32 bits))                                      // FF0000
 }
