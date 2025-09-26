@@ -1,9 +1,9 @@
 package ao68000
 
 import ao68000.core._
-import ao68000.io._
 import ao68000.memory._
 import spinal.core._
+import spinal.lib.{MuxOH, PriorityMux}
 
 import scala.language.postfixOps
 
@@ -25,28 +25,48 @@ case class Ao68000TopLevel(romFilename: String = "blinker.hex") extends Componen
     // CPU
     val cpu = Cpu68000()
 
-    // Address decoding
-    val hitRom = !cpu.io.bus.as && cpu.io.bus.rw &&
-      (cpu.io.bus.addr < U(2048, 32 bits)) // ROM: 1024 words x 2 bytes
-    val hitLed = !cpu.io.bus.as && !cpu.io.bus.rw &&
-      (cpu.io.bus.addr === U(0x00FF0000, 32 bits))
-    // Future devices can be added by defining more `hitDevice` signals
-
-    // DTACK combines all slave hits
-    cpu.io.bus.dtack := !(!hitRom || !hitLed)
-
     // ROM
-    val rom = Rom16Bits(size = 1024, filename = romFilename)
-    cpu.io.bus.dataIn := rom.io.dataOut
-    rom.io.addr := cpu.io.bus.addr(10 downto 1)
-    rom.io.en := hitRom
+    // TODO: implement LDS/UDS
+    val rom = Rom16Bits(size = 1024, filename = romFilename) // 2 KB
+
+    // RAM
+    // TODO: implement LDS/UDS
+    val ram = Ram16Bits(size = 1024) // 2 KB
 
     // LEDs
     val ledReg = Reg(Bits(4 bits)) init 0
     io.led := ledReg
 
-    // CPU writes to LED register
-    when(hitLed) {
+    // Address decoding
+    val addrDec = AddressDecoder()
+    addrDec.io.addr := cpu.io.bus.addr
+    addrDec.io.as := cpu.io.bus.as
+    addrDec.io.rw := cpu.io.bus.rw
+
+    // DTACK combines all slave hits
+    // TODO: Should each device determine its own dtack?
+    cpu.io.bus.dtack := addrDec.io.romEn && addrDec.io.ramEn && addrDec.io.ledEn
+
+    when(addrDec.io.romEn) {
+      cpu.io.bus.dataIn := rom.io.dataOut
+    } elsewhen(addrDec.io.ramEn) {
+      cpu.io.bus.dataIn := ram.io.dataOut
+    } otherwise {
+      cpu.io.bus.dataIn := B(0, 16 bits)
+    }
+
+    // ROM binding
+    rom.io.addr := cpu.io.bus.addr(10 downto 1)
+    rom.io.en := addrDec.io.romEn
+
+    // RAM binding
+    ram.io.rw := cpu.io.bus.rw
+    ram.io.addr := cpu.io.bus.addr(10 downto 1)
+    ram.io.dataIn := cpu.io.bus.dataOut
+    ram.io.en := addrDec.io.ramEn
+
+    // LED binding
+    when(addrDec.io.ledEn) {
       ledReg := cpu.io.bus.dataOut(3 downto 0)
     }
   }
