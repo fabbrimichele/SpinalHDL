@@ -33,5 +33,5 @@ case class RomMapped(baseAddress: BigInt) extends Component {
 
   // Connect to the slave port
   io.bus.dataIn := dataOut
-  io.bus.dtack  := dtack
+  //io.bus.dtack  := dtack
 }

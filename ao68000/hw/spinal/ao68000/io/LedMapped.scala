@@ -21,5 +21,5 @@ case class LedMapped(baseAddress: BigInt) extends Component {
     ledReg := io.bus.dataOut(3 downto 0)
   }
 
-  io.bus.dtack := writeEnable
+  //io.bus.dtack := writeEnable
 }

@@ -1,6 +1,8 @@
 package ao68000.memory
 
+import ao68000.core.CpuBus
 import spinal.core._
+import spinal.lib.slave
 
 import scala.io.Source
 import scala.language.postfixOps
@@ -16,15 +18,27 @@ import scala.util.Using
  */
 case class Rom16Bits(size: Int, filename: String) extends Component {
   val io = new Bundle {
-    val addr    = in UInt(log2Up(size) bits)
-    val en      = in Bool()
-    val dataOut = out Bits(16 bits)
+    val bus   = slave(CpuBus())
+    val sel   = in Bool() // chip select from decoder
+    val dtack = out Bool()
   }
 
-  val rom = Mem(Bits(16 bits), size)
-  rom.init(readContentFromFile())
+  val mem = Mem(Bits(16 bits), size)
+  mem.init(readContentFromFile())
 
-  io.dataOut := rom.readSync(io.addr, io.en)
+  // Default response
+  io.bus.dataIn := 0
+  io.dtack := True
+
+  when(!io.bus.as && io.sel) {
+    io.dtack := False // active
+    val wordAddr = io.bus.addr(log2Up(size) downto 1)
+
+    when(io.bus.rw) {
+      // Read
+      io.bus.dataIn := mem.readSync(wordAddr)
+    }
+  }
 
   private def readContentFromFile() = {
     val romContent = Using.resource(getClass.getResourceAsStream(filename)) { stream =>

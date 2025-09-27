@@ -1,29 +1,35 @@
 package ao68000.memory
 
+import ao68000.core.CpuBus
 import spinal.core._
+import spinal.lib._
 
 import scala.language.postfixOps
 
 case class Ram16Bits(size: Int) extends Component {
   val io = new Bundle {
-    val addr    = in UInt(log2Up(size) bits)
-    val en      = in Bool()
-    val rw      = in Bool()
-    val dataOut = out Bits(16 bits)
-    val dataIn  = in Bits(16 bits)
+    val bus   = slave(CpuBus())
+    val sel   = in Bool() // chip select from decoder
+    val dtack = out Bool()
   }
 
-  val ram = Mem(Bits(16 bits), size)
+  val mem = Mem(Bits(16 bits), size)
 
-  io.dataOut := ram.readSync(
-    address = io.addr,
-    enable = io.en & io.rw
-  )
+  // Default response
+  io.bus.dataIn := 0
+  io.dtack := True // inactive
 
-  when (io.en && !io.rw) {
-    ram.write(
-      address = io.addr,
-      data = io.dataIn
-    )
+  when(!io.bus.as && io.sel) {
+    io.dtack := False // active
+    val wordAddr = io.bus.addr(log2Up(size) downto 1)
+
+    when(io.bus.rw) {
+      // Read
+      io.bus.dataIn := mem.readSync(wordAddr) // TODO: try to use (wordAddr, enable = true)
+    } otherwise {
+      // Write
+      // TODO: manage UDS/LDS
+      mem.write(wordAddr, io.bus.dataOut)
+    }
   }
 }

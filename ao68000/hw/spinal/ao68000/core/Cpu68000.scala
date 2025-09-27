@@ -5,9 +5,8 @@ import spinal.lib._
 
 case class Cpu68000() extends Component {
   val io = new Bundle {
-    val bus = master(CpuBus())
-    //val clock = in Bool()
-    //val reset = in Bool()
+    val bus   = master(CpuBus())
+    val dtack = in Bool()
   }
 
   val tg68000 = new Tg68000BB
@@ -28,5 +27,5 @@ case class Cpu68000() extends Component {
 
   // master bus read from bus (driven by slaves)
   tg68000.io.data_in := io.bus.dataIn
-  tg68000.io.dtack := io.bus.dtack
+  tg68000.io.dtack := io.dtack
 }
