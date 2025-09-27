@@ -22,6 +22,7 @@ case class LedDevice() extends Component {
   io.dtack := True
 
   when(!io.bus.as && io.sel && !io.bus.rw) {
+    io.dtack := False // active
     // TODO: Should I use LDS/UDS?
     ledReg := io.bus.dataOut(3 downto 0)
   }
