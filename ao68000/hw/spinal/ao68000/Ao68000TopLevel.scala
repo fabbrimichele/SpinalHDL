@@ -1,6 +1,7 @@
 package ao68000
 
 import ao68000.core._
+import ao68000.io.LedDevice
 import ao68000.memory._
 import spinal.core._
 import spinal.lib.{MuxOH, PriorityMux}
@@ -28,8 +29,8 @@ case class Ao68000TopLevel(romFilename: String = "blinker.hex") extends Componen
     // Peripherals
     val rom = Mem16Bits(size = 1024, readOnly = true, initFile = Some(romFilename)) // 2 KB
     val ram = Mem16Bits(size = 1024) // 2 KB
-    val ledReg = Reg(Bits(4 bits)) init 0
-    io.led := ledReg
+    val led = LedDevice()
+    io.led := led.io.ledOut
 
     // Address decoding
     val addrDec = AddressDecoder()
@@ -40,6 +41,7 @@ case class Ao68000TopLevel(romFilename: String = "blinker.hex") extends Componen
     // Chip selects
     ram.io.sel := addrDec.io.ramSel
     rom.io.sel := addrDec.io.romSel
+    led.io.sel := addrDec.io.ledSel
 
     // Connect CPU bus to devices
     // TODO: assign in a loop or make a method to connect the bus outputs
@@ -57,6 +59,13 @@ case class Ao68000TopLevel(romFilename: String = "blinker.hex") extends Componen
     rom.io.bus.uds := cpu.io.bus.uds
     rom.io.bus.rw := cpu.io.bus.rw
 
+    led.io.bus.addr := cpu.io.bus.addr
+    led.io.bus.dataOut := cpu.io.bus.dataOut
+    led.io.bus.as := cpu.io.bus.as
+    led.io.bus.lds := cpu.io.bus.lds
+    led.io.bus.uds := cpu.io.bus.uds
+    led.io.bus.rw := cpu.io.bus.rw
+
     // DTACK combines all slave hits
     // TODO: Should each device determine its own dtack?
     //cpu.io.bus.dtack := addrDec.io.romEn && addrDec.io.ramEn && addrDec.io.ledEn
@@ -70,11 +79,6 @@ case class Ao68000TopLevel(romFilename: String = "blinker.hex") extends Componen
       cpu.io.bus.dataIn := ram.io.bus.dataIn
     } otherwise {
       cpu.io.bus.dataIn := B(0, 16 bits)
-    }
-
-    // LED binding
-    when(addrDec.io.ledSel) {
-      ledReg := cpu.io.bus.dataOut(3 downto 0)
     }
   }
 
