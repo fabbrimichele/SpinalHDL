@@ -14,16 +14,24 @@ case class LedDevice() extends Component {
     val ledOut = out Bits(4 bits)
   }
 
-  val ledReg = Reg(Bits(4 bits)) init 0
-  io.ledOut := ledReg
+  val ledReg = Reg(Bits(16 bits)) init 0
+  io.ledOut := ledReg(3 downto 0)
 
   // Default response
   io.bus.dataIn := 0
   io.dtack := True
 
-  when(!io.bus.as && io.sel && !io.bus.rw) {
+  when(!io.bus.as && io.sel) {
     io.dtack := False // active
-    // TODO: Should I use LDS/UDS?
-    ledReg := io.bus.dataOut(3 downto 0)
+
+    when(io.bus.rw) {
+      // Read
+      // TODO: manage UDS/LDS
+      io.bus.dataIn := ledReg
+    } otherwise  {
+      // Write if not read only
+      // TODO: manage UDS/LDS
+      ledReg := io.bus.dataOut
+    }
   }
 }

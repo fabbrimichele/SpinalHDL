@@ -62,6 +62,7 @@ case class Ao68000TopLevel(romFilename: String = "blinker.hex") extends Componen
       Seq(
         addrDec.io.romSel -> rom.io.bus.dataIn,
         addrDec.io.ramSel -> ram.io.bus.dataIn,
+        addrDec.io.ledSel -> led.io.bus.dataIn,
         True -> B(0, 16 bits)
       )
     )
