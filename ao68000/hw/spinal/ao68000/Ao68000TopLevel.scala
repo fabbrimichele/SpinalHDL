@@ -26,8 +26,8 @@ case class Ao68000TopLevel(romFilename: String = "blinker.hex") extends Componen
     val cpu = Cpu68000()
 
     // Peripherals
-    val rom = Rom16Bits(size = 1024, filename = romFilename) // 2 KB
-    val ram = Ram16Bits(size = 1024) // 2 KB
+    val rom = Mem16Bits(size = 1024, readOnly = true, initFile = Some(romFilename)) // 2 KB
+    val ram = Mem16Bits(size = 1024) // 2 KB
     val ledReg = Reg(Bits(4 bits)) init 0
     io.led := ledReg
 

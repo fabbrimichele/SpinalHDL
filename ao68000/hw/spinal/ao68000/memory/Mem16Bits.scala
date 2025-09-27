@@ -2,7 +2,7 @@ package ao68000.memory
 
 import ao68000.core.CpuBus
 import spinal.core._
-import spinal.lib.slave
+import spinal.lib._
 
 import scala.io.Source
 import scala.language.postfixOps
@@ -12,11 +12,11 @@ import scala.util.Using
  * ROM component with 16-bit words.
  *
  * @param size     The size of the ROM in 16-bit words.
- * @param filename The path to the ROM content file. Each line should contain one word in hexadecimal format.
+ * @param initFile The path to the ROM content file. Each line should contain one word in hexadecimal format.
  *                 The file is read from the **classpath**, so it should be placed under
  *                 `src/main/resources/ao68000/hw/spinal/ao68000/memory/`.
  */
-case class Rom16Bits(size: Int, filename: String) extends Component {
+case class Mem16Bits(size: Int, readOnly: Boolean = false, initFile: Option[String] = None) extends Component {
   val io = new Bundle {
     val bus   = slave(CpuBus())
     val sel   = in Bool() // chip select from decoder
@@ -24,7 +24,7 @@ case class Rom16Bits(size: Int, filename: String) extends Component {
   }
 
   val mem = Mem(Bits(16 bits), size)
-  mem.init(readContentFromFile())
+  initFile.foreach { filename => mem.init(readContentFromFile(filename)) }
 
   // Default response
   io.bus.dataIn := 0
@@ -36,12 +36,19 @@ case class Rom16Bits(size: Int, filename: String) extends Component {
 
     when(io.bus.rw) {
       // Read
+      // TODO: manage UDS/LDS
       io.bus.dataIn := mem.readSync(wordAddr)
+    } otherwise  {
+      if (!readOnly) {
+        // Write if not read only
+        // TODO: manage UDS/LDS
+        mem.write(wordAddr, io.bus.dataOut)
+      }
     }
   }
 
-  private def readContentFromFile() = {
-    val romContent = Using.resource(getClass.getResourceAsStream(filename)) { stream =>
+  private def readContentFromFile(initFile: String) = {
+    val romContent = Using.resource(getClass.getResourceAsStream(initFile)) { stream =>
       val source = Source.fromInputStream(stream)
       try {
         source.getLines()
@@ -53,5 +60,4 @@ case class Rom16Bits(size: Int, filename: String) extends Component {
     romContent ++ Seq.fill(1024 - romContent.size)(B(0, 16 bits))
   }
 }
-
 
