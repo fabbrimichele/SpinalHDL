@@ -3,7 +3,7 @@ package ao68000
 import ao68000.core._
 import ao68000.io.LedDevice
 import ao68000.memory._
-import spinal.core._
+import spinal.core.{True, _}
 import spinal.lib.{MuxOH, PriorityMux}
 
 import scala.language.postfixOps
@@ -32,17 +32,6 @@ case class Ao68000TopLevel(romFilename: String = "blinker.hex") extends Componen
     val led = LedDevice()
     io.led := led.io.ledOut
 
-    // Address decoding
-    val addrDec = AddressDecoder()
-    addrDec.io.addr := cpu.io.bus.addr
-    addrDec.io.as := cpu.io.bus.as
-    addrDec.io.rw := cpu.io.bus.rw
-
-    // Chip selects
-    ram.io.sel := addrDec.io.ramSel
-    rom.io.sel := addrDec.io.romSel
-    led.io.sel := addrDec.io.ledSel
-
     // Connect CPU bus to devices
     Seq(rom.io.bus, ram.io.bus, led.io.bus).foreach { deviceBus =>
       deviceBus.addr := cpu.io.bus.addr
@@ -56,13 +45,26 @@ case class Ao68000TopLevel(romFilename: String = "blinker.hex") extends Componen
     // Combines all devices dtack (active low)
     cpu.io.dtack := rom.io.dtack && ram.io.dtack && led.io.dtack
 
-    when(addrDec.io.romSel) {
-      cpu.io.bus.dataIn := rom.io.bus.dataIn
-    } elsewhen(addrDec.io.ramSel) {
-      cpu.io.bus.dataIn := ram.io.bus.dataIn
-    } otherwise {
-      cpu.io.bus.dataIn := B(0, 16 bits)
-    }
+    // Address decoding
+    val addrDec = AddressDecoder()
+    addrDec.io.addr := cpu.io.bus.addr
+    addrDec.io.as := cpu.io.bus.as
+    addrDec.io.rw := cpu.io.bus.rw
+
+    // Chip selects
+    ram.io.sel := addrDec.io.ramSel
+    rom.io.sel := addrDec.io.romSel
+    led.io.sel := addrDec.io.ledSel
+
+    // TODO: make LedDevice also readable
+    // DataIn multiplexing
+    cpu.io.bus.dataIn := PriorityMux(
+      Seq(
+        addrDec.io.romSel -> rom.io.bus.dataIn,
+        addrDec.io.ramSel -> ram.io.bus.dataIn,
+        True -> B(0, 16 bits)
+      )
+    )
   }
 
   // Remove io_ prefix
