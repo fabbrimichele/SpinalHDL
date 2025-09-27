@@ -44,27 +44,14 @@ case class Ao68000TopLevel(romFilename: String = "blinker.hex") extends Componen
     led.io.sel := addrDec.io.ledSel
 
     // Connect CPU bus to devices
-    // TODO: assign in a loop or make a method to connect the bus outputs
-    ram.io.bus.addr := cpu.io.bus.addr
-    ram.io.bus.dataOut := cpu.io.bus.dataOut
-    ram.io.bus.as := cpu.io.bus.as
-    ram.io.bus.lds := cpu.io.bus.lds
-    ram.io.bus.uds := cpu.io.bus.uds
-    ram.io.bus.rw := cpu.io.bus.rw
-
-    rom.io.bus.addr := cpu.io.bus.addr
-    rom.io.bus.dataOut := cpu.io.bus.dataOut
-    rom.io.bus.as := cpu.io.bus.as
-    rom.io.bus.lds := cpu.io.bus.lds
-    rom.io.bus.uds := cpu.io.bus.uds
-    rom.io.bus.rw := cpu.io.bus.rw
-
-    led.io.bus.addr := cpu.io.bus.addr
-    led.io.bus.dataOut := cpu.io.bus.dataOut
-    led.io.bus.as := cpu.io.bus.as
-    led.io.bus.lds := cpu.io.bus.lds
-    led.io.bus.uds := cpu.io.bus.uds
-    led.io.bus.rw := cpu.io.bus.rw
+    Seq(rom.io.bus, ram.io.bus, led.io.bus).foreach { deviceBus =>
+      deviceBus.addr := cpu.io.bus.addr
+      deviceBus.dataOut := cpu.io.bus.dataOut
+      deviceBus.as := cpu.io.bus.as
+      deviceBus.lds := cpu.io.bus.lds
+      deviceBus.uds := cpu.io.bus.uds
+      deviceBus.rw := cpu.io.bus.rw
+    }
 
     // DTACK combines all slave hits
     // TODO: Should each device determine its own dtack?
