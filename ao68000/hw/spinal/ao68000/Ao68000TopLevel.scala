@@ -53,12 +53,8 @@ case class Ao68000TopLevel(romFilename: String = "blinker.hex") extends Componen
       deviceBus.rw := cpu.io.bus.rw
     }
 
-    // DTACK combines all slave hits
-    // TODO: Should each device determine its own dtack?
-    //cpu.io.bus.dtack := addrDec.io.romEn && addrDec.io.ramEn && addrDec.io.ledEn
-
-    // DTACK mux (any selected device can ack)
-    cpu.io.dtack := False
+    // Combines all devices dtack (active low)
+    cpu.io.dtack := rom.io.dtack && ram.io.dtack && led.io.dtack
 
     when(addrDec.io.romSel) {
       cpu.io.bus.dataIn := rom.io.bus.dataIn
