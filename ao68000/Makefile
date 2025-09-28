@@ -14,7 +14,7 @@ gen/$(TARGET)TopLevel.v: rom
 gen/$(TARGET)TopLevel.vhdl: rom
 	sbt "runMain ${TOPLEVEL}Vhdl"
 
-rom: blinker led_on
+rom: blinker led_on keys
 
 blinker:
 	vasmm68k_mot -Fbin sw/asm/blinker.asm -o hw/gen/blinker.bin
@@ -28,6 +28,12 @@ led_on:
 	mkdir -p target/scala-2.13/classes/ao68000/memory/
 	cp hw/spinal/ao68000/memory/led_on.hex target/scala-2.13/classes/ao68000/memory/led_on.hex
 
+keys:
+	vasmm68k_mot -Fbin sw/asm/keys.asm -o hw/gen/keys.bin
+	xxd -p -c 2 hw/gen/keys.bin | awk '{print toupper($$0)}' > hw/spinal/ao68000/memory/keys.hex
+	mkdir -p target/scala-2.13/classes/ao68000/memory/
+	cp hw/spinal/ao68000/memory/keys.hex target/scala-2.13/classes/ao68000/memory/keys.hex
+
 prog-fpga:
 	echo "Programming FPGA"
 	papilio-prog -v -f target/$(TARGET).bit
@@ -39,6 +45,7 @@ prog-flash:
 disassemble:
 	m68k-elf-objdump -D -b binary -m m68k --adjust-vma=0x0 hw/gen/led_on.bin
 	m68k-elf-objdump -D -b binary -m m68k --adjust-vma=0x0 hw/gen/blinker.bin
+	m68k-elf-objdump -D -b binary -m m68k --adjust-vma=0x0 hw/gen/keys.bin
 
 clean:
 	rm -f hw/gen/*.v
@@ -49,6 +56,7 @@ clean:
 	rm -rf _xmsgs
 	rm -rf xlnx_auto_0_xdb
 	rm -rf target
-	rm -rf hw/spinal/ao68000/memory/blinker.bin
-	rm -rf hw/spinal/ao68000/memory/led_on.bin
+	rm -rf hw/spinal/ao68000/memory/blinker.hex
+	rm -rf hw/spinal/ao68000/memory/led_on.hex
+	rm -rf hw/spinal/ao68000/memory/keys.hex
 

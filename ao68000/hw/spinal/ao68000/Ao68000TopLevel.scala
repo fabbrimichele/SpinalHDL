@@ -1,7 +1,7 @@
 package ao68000
 
 import ao68000.core._
-import ao68000.io.LedDevice
+import ao68000.io.{KeyDevice, LedDevice}
 import ao68000.memory._
 import spinal.core.{True, _}
 import spinal.lib.{MuxOH, PriorityMux}
@@ -13,10 +13,11 @@ import scala.language.postfixOps
  * @param romFilename name of the file containing the ROM content
  */
 //noinspection TypeAnnotation
-case class Ao68000TopLevel(romFilename: String = "blinker.hex") extends Component {
+case class Ao68000TopLevel(romFilename: String) extends Component {
   val io = new Bundle {
     val reset = in Bool()
     val led = out Bits(4 bits)
+    val key = in Bits(4 bits)
   }
 
   val resetController = ResetController()
@@ -31,9 +32,11 @@ case class Ao68000TopLevel(romFilename: String = "blinker.hex") extends Componen
     val ram = Mem16Bits(size = 1024) // 2 KB
     val led = LedDevice()
     io.led := led.io.ledOut
+    val key = KeyDevice()
+    key.io.keyIn := io.key
 
     // Connect CPU bus to devices
-    Seq(rom.io.bus, ram.io.bus, led.io.bus).foreach { deviceBus =>
+    Seq(rom.io.bus, ram.io.bus, led.io.bus, key.io.bus).foreach { deviceBus =>
       deviceBus.addr := cpu.io.bus.addr
       deviceBus.dataOut := cpu.io.bus.dataOut
       deviceBus.as := cpu.io.bus.as
@@ -43,26 +46,26 @@ case class Ao68000TopLevel(romFilename: String = "blinker.hex") extends Componen
     }
 
     // Combines all devices dtack (active low)
-    cpu.io.dtack := rom.io.dtack && ram.io.dtack && led.io.dtack
+    cpu.io.dtack := rom.io.dtack && ram.io.dtack && led.io.dtack && key.io.dtack
 
     // Address decoding
     val addrDec = AddressDecoder()
     addrDec.io.addr := cpu.io.bus.addr
     addrDec.io.as := cpu.io.bus.as
-    addrDec.io.rw := cpu.io.bus.rw
 
     // Chip selects
     ram.io.sel := addrDec.io.ramSel
     rom.io.sel := addrDec.io.romSel
     led.io.sel := addrDec.io.ledSel
+    key.io.sel := addrDec.io.keySel
 
-    // TODO: make LedDevice also readable
     // DataIn multiplexing
     cpu.io.bus.dataIn := PriorityMux(
       Seq(
         addrDec.io.romSel -> rom.io.bus.dataIn,
         addrDec.io.ramSel -> ram.io.bus.dataIn,
         addrDec.io.ledSel -> led.io.bus.dataIn,
+        addrDec.io.keySel -> key.io.bus.dataIn,
         True -> B(0, 16 bits)
       )
     )
@@ -73,7 +76,9 @@ case class Ao68000TopLevel(romFilename: String = "blinker.hex") extends Componen
 }
 
 object Ao68000TopLevelVhdl extends App {
-  val report = Config.spinal.generateVhdl(Ao68000TopLevel())
+  private val romFilename = "keys.hex"
+  //private val romFilename = "blinker.hex"
+  private val report = Config.spinal.generateVhdl(Ao68000TopLevel(romFilename))
   report.mergeRTLSource("mergeRTL") // Merge all rtl sources into mergeRTL.vhd and mergeRTL.v files
   report.printPruned()
 }
