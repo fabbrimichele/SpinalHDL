@@ -1,8 +1,9 @@
 package ao68000
 
 import ao68000.core._
+import ao68000.io.LedDevice
 import ao68000.memory._
-import spinal.core._
+import spinal.core.{True, _}
 import spinal.lib.{MuxOH, PriorityMux}
 
 import scala.language.postfixOps
@@ -25,17 +26,24 @@ case class Ao68000TopLevel(romFilename: String = "blinker.hex") extends Componen
     // CPU
     val cpu = Cpu68000()
 
-    // ROM
-    // TODO: implement LDS/UDS
-    val rom = Rom16Bits(size = 1024, filename = romFilename) // 2 KB
+    // Peripherals
+    val rom = Mem16Bits(size = 1024, readOnly = true, initFile = Some(romFilename)) // 2 KB
+    val ram = Mem16Bits(size = 1024) // 2 KB
+    val led = LedDevice()
+    io.led := led.io.ledOut
 
-    // RAM
-    // TODO: implement LDS/UDS
-    val ram = Ram16Bits(size = 1024) // 2 KB
+    // Connect CPU bus to devices
+    Seq(rom.io.bus, ram.io.bus, led.io.bus).foreach { deviceBus =>
+      deviceBus.addr := cpu.io.bus.addr
+      deviceBus.dataOut := cpu.io.bus.dataOut
+      deviceBus.as := cpu.io.bus.as
+      deviceBus.lds := cpu.io.bus.lds
+      deviceBus.uds := cpu.io.bus.uds
+      deviceBus.rw := cpu.io.bus.rw
+    }
 
-    // LEDs
-    val ledReg = Reg(Bits(4 bits)) init 0
-    io.led := ledReg
+    // Combines all devices dtack (active low)
+    cpu.io.dtack := rom.io.dtack && ram.io.dtack && led.io.dtack
 
     // Address decoding
     val addrDec = AddressDecoder()
@@ -43,32 +51,21 @@ case class Ao68000TopLevel(romFilename: String = "blinker.hex") extends Componen
     addrDec.io.as := cpu.io.bus.as
     addrDec.io.rw := cpu.io.bus.rw
 
-    // DTACK combines all slave hits
-    // TODO: Should each device determine its own dtack?
-    cpu.io.bus.dtack := addrDec.io.romEn && addrDec.io.ramEn && addrDec.io.ledEn
+    // Chip selects
+    ram.io.sel := addrDec.io.ramSel
+    rom.io.sel := addrDec.io.romSel
+    led.io.sel := addrDec.io.ledSel
 
-    when(addrDec.io.romEn) {
-      cpu.io.bus.dataIn := rom.io.dataOut
-    } elsewhen(addrDec.io.ramEn) {
-      cpu.io.bus.dataIn := ram.io.dataOut
-    } otherwise {
-      cpu.io.bus.dataIn := B(0, 16 bits)
-    }
-
-    // ROM binding
-    rom.io.addr := cpu.io.bus.addr(10 downto 1)
-    rom.io.en := addrDec.io.romEn
-
-    // RAM binding
-    ram.io.rw := cpu.io.bus.rw
-    ram.io.addr := cpu.io.bus.addr(10 downto 1)
-    ram.io.dataIn := cpu.io.bus.dataOut
-    ram.io.en := addrDec.io.ramEn
-
-    // LED binding
-    when(addrDec.io.ledEn) {
-      ledReg := cpu.io.bus.dataOut(3 downto 0)
-    }
+    // TODO: make LedDevice also readable
+    // DataIn multiplexing
+    cpu.io.bus.dataIn := PriorityMux(
+      Seq(
+        addrDec.io.romSel -> rom.io.bus.dataIn,
+        addrDec.io.ramSel -> ram.io.bus.dataIn,
+        addrDec.io.ledSel -> led.io.bus.dataIn,
+        True -> B(0, 16 bits)
+      )
+    )
   }
 
   // Remove io_ prefix

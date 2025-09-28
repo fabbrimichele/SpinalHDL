@@ -31,17 +31,17 @@ object Ao68000TopLevelSim extends App {
         val bus = dut.resetArea.cpu.io.bus
 
         // CPU bus
-        val tg68IO = dut.resetArea.cpu.tg68000
-        val address = tg68IO.io.addr.toLong
-        val dataIn = tg68IO.io.data_in.toLong
-        val dataOut = tg68IO.io.data_out.toLong
-        val as = boolToBit(tg68IO.io.as)
-        val rw = boolToBit(tg68IO.io.rw)
-        val lds = boolToBit(tg68IO.io.lds)
-        val uds = boolToBit(tg68IO.io.uds)
+        val tg68 = dut.resetArea.cpu.tg68000
+        val address = tg68.io.addr.toLong
+        val dataIn = tg68.io.data_in.toLong
+        val dataOut = tg68.io.data_out.toLong
+        val as = boolToBit(tg68.io.as)
+        val rw = boolToBit(tg68.io.rw)
+        val lds = boolToBit(tg68.io.lds)
+        val uds = boolToBit(tg68.io.uds)
 
         // LEDs
-        val ledEn = boolToBit(dut.resetArea.addrDec.io.ledEn)
+        val ledEn = boolToBit(dut.resetArea.addrDec.io.ledSel)
         val led = dut.io.led.toLong
 
         val color = {
