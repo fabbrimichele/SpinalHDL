@@ -52,7 +52,6 @@ case class Ao68000TopLevel(romFilename: String) extends Component {
     val addrDec = AddressDecoder()
     addrDec.io.addr := cpu.io.bus.addr
     addrDec.io.as := cpu.io.bus.as
-    addrDec.io.rw := cpu.io.bus.rw
 
     // Chip selects
     ram.io.sel := addrDec.io.ramSel
@@ -78,7 +77,7 @@ case class Ao68000TopLevel(romFilename: String) extends Component {
 
 object Ao68000TopLevelVhdl extends App {
   private val romFilename = "keys.hex"
-  //private val romFilename = "led_on.hex"
+  //private val romFilename = "blinker.hex"
   private val report = Config.spinal.generateVhdl(Ao68000TopLevel(romFilename))
   report.mergeRTLSource("mergeRTL") // Merge all rtl sources into mergeRTL.vhd and mergeRTL.v files
   report.printPruned()
