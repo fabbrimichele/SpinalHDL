@@ -2,18 +2,18 @@ package ao68000
 
 import spinal.core._
 import spinal.core.sim._
-import spinal.sim.GhdlFlags
 
 import scala.language.postfixOps
 
-object Ao68000TopLevelSim extends App {
-  val flagExplicit = "-fexplicit" // This is required to make GHDL compile TG68.vhd
+object KeyAo68000TopLevelSim extends App {
   Config.sim
     .compile {
-      val dut = Ao68000TopLevel(romFilename = "led_on.hex")
+      val dut = Ao68000TopLevel(romFilename = "keys.hex")
       dut.resetArea.cpu.io.bus.simPublic() // <-- make it accessible
       dut.resetArea.cpu.tg68000.io.simPublic()
       dut.resetArea.addrDec.io.simPublic()
+      dut.resetArea.key.io.simPublic()
+      dut.resetArea.key.keyReg.simPublic()
       dut
     }
     .doSim { dut =>
@@ -23,10 +23,14 @@ object Ao68000TopLevelSim extends App {
 
       // Reset button not pushed
       dut.io.reset #= false
+      //dut.clockDomain.waitSampling(100)
 
-      // TODO: ResetController makes GHDL log warnings
+      // Press
+      dut.io.key #= 5 // press 2 keys
+      //dut.clockDomain.waitSampling(1000)
+
       // Run simulation for a while (adjust cycles as needed)
-      for (i <- 0 until 80) {
+      for (i <- 0 until 180) {
         dut.clockDomain.waitRisingEdge()
         val bus = dut.resetArea.cpu.io.bus
 
@@ -63,8 +67,15 @@ object Ao68000TopLevelSim extends App {
           f"| LED: $led%04X")
       }
 
-      assert(dut.io.led.toLong == 1, "Expected LED to be '0001'")
+      val led = dut.io.led.toLong
+      val keyIn = dut.resetArea.key.io.keyIn.toLong
+      val keyReg = dut.resetArea.key.keyReg.toLong
+
+      assert(keyIn == 5, f"Expected keyIn to be equal to 5 instead it was $keyIn")
+      assert(keyReg == 5, f"Expected keyReg to be equal to 5 instead it was $keyReg")
+      assert(led == 5, f"Expected led to be equal to 5 instead it was $led")
     }
 
   private def boolToBit(b: Bool) = if (b.toBoolean) "1" else "0"
+
 }

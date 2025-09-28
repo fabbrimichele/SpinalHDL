@@ -65,6 +65,16 @@ object AddressDecoderSim extends App {
       assert(!dut.io.ramSel.toBoolean, "Expected ramEn low on write to 0x00FF0000")
       assert(dut.io.ledSel.toBoolean, "Expected ledEn high on write to 0x00FF0000")
 
+      // Key enabled on read
+      dut.io.addr #= 0x00FF0002
+      dut.io.as #= false
+      dut.io.rw #= true // read
+      sim.sleep(1)  // let the simulator propagate events
+      assert(!dut.io.romSel.toBoolean, "Expected romEn low on write to 0x00FF0002")
+      assert(!dut.io.ramSel.toBoolean, "Expected ramEn low on write to 0x00FF0002")
+      assert(!dut.io.ledSel.toBoolean, "Expected ledEn low on write to 0x00FF0002")
+      assert(dut.io.keySel.toBoolean, "Expected keyEn high on write to 0x00FF0002")
+
       // ROM, RAM and LED disabled out of address range
       dut.io.addr #= 0x00AA0000
       dut.io.as #= false
