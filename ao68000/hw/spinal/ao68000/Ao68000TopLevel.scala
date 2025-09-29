@@ -1,10 +1,11 @@
 package ao68000
 
 import ao68000.core._
-import ao68000.io.{KeyDevice, LedDevice}
+import ao68000.io._
 import ao68000.memory._
-import spinal.core.{True, _}
-import spinal.lib.{MuxOH, PriorityMux}
+import spinal.core._
+import spinal.lib.com.uart._
+import spinal.lib._
 
 import scala.language.postfixOps
 
@@ -18,6 +19,7 @@ case class Ao68000TopLevel(romFilename: String) extends Component {
     val reset = in Bool()
     val led = out Bits(4 bits)
     val key = in Bits(4 bits)
+    val uart = master(Uart()) // Expose UART pins (txd, rxd), must be defined in the ucf
   }
 
   val resetController = ResetController()
@@ -71,6 +73,10 @@ case class Ao68000TopLevel(romFilename: String) extends Component {
         True -> B(0, 16 bits)
       )
     )
+
+    // UART
+    val uartDevice = UartDevice()
+    io.uart <> uartDevice.io.uart
   }
 
   // Remove io_ prefix
@@ -78,8 +84,8 @@ case class Ao68000TopLevel(romFilename: String) extends Component {
 }
 
 object Ao68000TopLevelVhdl extends App {
-  private val romFilename = "keys.hex"
-  //private val romFilename = "blinker.hex"
+  //private val romFilename = "keys.hex"
+  private val romFilename = "blinker.hex"
   private val report = Config.spinal.generateVhdl(Ao68000TopLevel(romFilename))
   report.mergeRTLSource("mergeRTL") // Merge all rtl sources into mergeRTL.vhd and mergeRTL.v files
   report.printPruned()

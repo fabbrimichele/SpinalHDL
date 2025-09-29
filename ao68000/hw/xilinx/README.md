@@ -22,4 +22,6 @@ Install:
   sudo apt update
   sudo apt install libboost-all-dev
   ```
-* 
+
+## RS232 Adapter
+https://www.waveshare.com/wiki/RS232_Board
