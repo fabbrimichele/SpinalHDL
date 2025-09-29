@@ -35,8 +35,10 @@ case class Ao68000TopLevel(romFilename: String) extends Component {
     val key = KeyDevice()
     key.io.keyIn := io.key
 
+    val deviceBuses = Seq(rom.io.bus, ram.io.bus, led.io.bus, key.io.bus)
+
     // Connect CPU bus to devices
-    Seq(rom.io.bus, ram.io.bus, led.io.bus, key.io.bus).foreach { deviceBus =>
+    deviceBuses.foreach { deviceBus =>
       deviceBus.addr := cpu.io.bus.addr
       deviceBus.dataOut := cpu.io.bus.dataOut
       deviceBus.as := cpu.io.bus.as
@@ -46,7 +48,7 @@ case class Ao68000TopLevel(romFilename: String) extends Component {
     }
 
     // Combines all devices dtack (active low)
-    cpu.io.dtack := rom.io.dtack && ram.io.dtack && led.io.dtack && key.io.dtack
+    cpu.io.dtack := deviceBuses.map(_.dtack).reduce(_ && _)
 
     // Address decoding
     val addrDec = AddressDecoder()
@@ -59,7 +61,7 @@ case class Ao68000TopLevel(romFilename: String) extends Component {
     led.io.sel := addrDec.io.ledSel
     key.io.sel := addrDec.io.keySel
 
-    // DataIn multiplexing
+    // DataIn mux
     cpu.io.bus.dataIn := PriorityMux(
       Seq(
         addrDec.io.romSel -> rom.io.bus.dataIn,

@@ -10,7 +10,6 @@ case class LedDevice() extends Component {
   val io = new Bundle {
     val bus   = slave(CpuBus())
     val sel   = in Bool() // chip select from decoder
-    val dtack = out Bool()
     val ledOut = out Bits(4 bits)
   }
 
@@ -19,10 +18,10 @@ case class LedDevice() extends Component {
 
   // Default response
   io.bus.dataIn := 0
-  io.dtack := True
+  io.bus.dtack := True
 
   when(!io.bus.as && io.sel) {
-    io.dtack := False // active
+    io.bus.dtack := False // active
 
     when(io.bus.rw) {
       // Read

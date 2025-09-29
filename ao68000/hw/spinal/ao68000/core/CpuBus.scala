@@ -11,11 +11,12 @@ case class CpuBus() extends Bundle with IMasterSlave {
   val dataOut = Bits(16 bits)
   val rw      = Bool()       // 1 = read, 0 = write
   val as      = Bool()       // address strobe
+  val dtack   = Bool()
   val uds     = Bool()       // upper data strobe
   val lds     = Bool()       // lower data strobe
 
   override def asMaster(): Unit = {
     out(addr, dataOut, rw, as, uds, lds)
-    in(dataIn)
+    in(dtack, dataIn)
   }
 }
